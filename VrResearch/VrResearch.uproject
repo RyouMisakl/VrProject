@@ -3,6 +3,13 @@
 	"EngineAssociation": "4.22",
 	"Category": "",
 	"Description": "",
+	"Plugins": [
+		{
+			"Name": "PathFollow",
+			"Enabled": true,
+			"MarketplaceURL": "com.epicgames.launcher://ue/marketplace/content/7c19d00ad42a4b67972eea383dedb7f3"
+		}
+	],
 	"TargetPlatforms": [
 		"PS4",
 		"WindowsNoEditor"
