@@ -1,4 +1,4 @@
-﻿Log file open, 06/12/19 11:28:49
+﻿Log file open, 06/17/19 06:21:44
 LogWindows: Failed to load 'aqProf.dll' (GetLastError=126)
 LogWindows: File 'aqProf.dll' does not exist
 LogWindows: Failed to load 'VtuneApi.dll' (GetLastError=126)
@@ -10,7 +10,7 @@ LogInit: Display: Running engine for game: VrResearch
 LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
 LogPlatformFile: Not using cached read wrapper
 LogTaskGraph: Started task graph with 5 named threads and 23 total threads with 3 sets of task threads.
-LogStats: Stats thread started at 0.323292
+LogStats: Stats thread started at 0.552537
 LogD3D11RHI: Loaded GFSDK_Aftermath_Lib.x64.dll
 LogICUInternationalization: ICU TimeZone Detection - Raw Offset: +8:00, Platform Override: ''
 LogPluginManager: Mounting plugin Paper2D
@@ -48,10 +48,12 @@ LogPluginManager: Mounting plugin BackChannel
 LogPluginManager: Mounting plugin CharacterAI
 LogPluginManager: Mounting plugin GeometryCache
 LogPluginManager: Mounting plugin HTML5Networking
+LogConfig: Warning: Failed to saved backup for config[C:/Users/Darren Chua/Documents/VrProject/VrResearch/Intermediate/Config/CoalescedSourceConfigs/HTML5Networking.ini]
 LogPluginManager: Mounting plugin ProxyLODPlugin
 LogPluginManager: Mounting plugin SkeletalReduction
 LogPluginManager: Mounting plugin MagicLeap
 LogPluginManager: Mounting plugin MagicLeapMedia
+LogPluginManager: Mounting plugin PathFollow
 LogPluginManager: Mounting plugin AndroidMedia
 LogPluginManager: Mounting plugin AvfMedia
 LogPluginManager: Mounting plugin ImgMedia
@@ -156,1389 +158,226 @@ LogInit: Presizing for max 16777216 objects, including 0 objects not considered 
 LogInit: Object subsystem initialized
 LogConfig: Setting CVar [[con.DebugEarlyDefault:1]]
 LogConfig: Setting CVar [[r.setres:1280x720]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[r.VSync:0]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Engine.ini]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusion:0]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusionStaticFraction:0]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[vr.InstancedStereo:1]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[r.SeparateTranslucency:0]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[r.HZBOcclusion:0]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[r.SSR.MaxRoughness:0]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[r.rhicmdbypass:0]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Engine.ini]
-[2019.06.12-03.28.50:236][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Engine.ini]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Engine.ini]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
-[2019.06.12-03.28.50:236][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
-[2019.06.12-03.28.50:237][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:16777216]]
-[2019.06.12-03.28.50:237][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
-[2019.06.12-03.28.50:237][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
-[2019.06.12-03.28.50:237][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
-[2019.06.12-03.28.50:237][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
-[2019.06.12-03.28.50:237][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
-[2019.06.12-03.28.50:237][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
-[2019.06.12-03.28.50:237][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Engine.ini]
-[2019.06.12-03.28.50:237][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Engine.ini]
-[2019.06.12-03.28.50:242][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:3]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:0]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:0]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:0]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.LensFlareQuality:0]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:0]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.BloomQuality:1]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:0]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2019.06.12-03.28.50:243][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2019.06.12-03.28.50:244][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2019.06.12-03.28.50:244][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2019.06.12-03.28.50:244][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2019.06.12-03.28.50:244][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
-[2019.06.12-03.28.50:244][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:4]]
-[2019.06.12-03.28.50:244][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2019.06.12-03.28.50:244][  0]LogConfig: Setting CVar [[r.SSR.Quality:0]]
-[2019.06.12-03.28.50:244][  0]LogConfig: Setting CVar [[r.SceneColorFormat:2]]
-[2019.06.12-03.28.50:244][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2019.06.12-03.28.50:244][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:0]]
-[2019.06.12-03.28.50:244][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2019.06.12-03.28.50:244][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2019.06.12-03.28.50:244][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2019.06.12-03.28.50:244][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2019.06.12-03.28.50:244][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2019.06.12-03.28.50:244][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2019.06.12-03.28.50:244][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2019.06.12-03.28.50:244][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
-[2019.06.12-03.28.50:244][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2019.06.12-03.28.50:244][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2019.06.12-03.28.50:244][  0]LogInit: Selected Device Profile: [Windows]
-[2019.06.12-03.28.50:244][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
-[2019.06.12-03.28.50:257][  0]LogHAL: Display: Platform has ~ 24 GB [25726074880 / 34359738368 / 24], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:0		; Required until we fix HLR fall-out]]
-[2019.06.12-03.28.50:257][  0]LogInit: Going up to parent DeviceProfile []
-[2019.06.12-03.28.50:257][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:3]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:0]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:0]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:0]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.LensFlareQuality:0]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:0]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.BloomQuality:1]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:0]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
-[2019.06.12-03.28.50:257][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:4]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.SSR.Quality:0]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.SceneColorFormat:2]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:0]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
-[2019.06.12-03.28.50:258][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
-[2019.06.12-03.28.50:259][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
-[2019.06.12-03.28.50:259][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
-[2019.06.12-03.28.50:259][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Engine.ini]
-[2019.06.12-03.28.50:259][  0]LogInit: Computer: DESKTOP-PJP97K6
-[2019.06.12-03.28.50:259][  0]LogInit: User: DarrenChua
-[2019.06.12-03.28.50:259][  0]LogInit: CPU Page size=4096, Cores=4
-[2019.06.12-03.28.50:259][  0]LogInit: High frequency timer resolution =2.742193 MHz
-[2019.06.12-03.28.50:259][  0]LogMemory: Memory total: Physical=24.0GB (24GB approx)
-[2019.06.12-03.28.50:259][  0]LogMemory: Platform Memory Stats for Windows
-[2019.06.12-03.28.50:259][  0]LogMemory: Process Physical Memory: 98.76 MB used, 98.76 MB peak
-[2019.06.12-03.28.50:259][  0]LogMemory: Process Virtual Memory: 89.36 MB used, 89.36 MB peak
-[2019.06.12-03.28.50:259][  0]LogMemory: Physical Memory: 12168.16 MB used,  12366.14 MB free, 24534.30 MB total
-[2019.06.12-03.28.50:259][  0]LogMemory: Virtual Memory: 4644.82 MB used,  134213080.00 MB free, 134217728.00 MB total
-[2019.06.12-03.28.51:145][  0]LogInit: Using OS detected language (en-US).
-[2019.06.12-03.28.51:145][  0]LogInit: Using OS detected locale (en-SG).
-[2019.06.12-03.28.51:147][  0]LogTextLocalizationManager: No specific localization for 'en-US' exists, so the 'en' localization will be used.
-[2019.06.12-03.28.51:394][  0]LogInit: Setting process to per monitor DPI aware
-[2019.06.12-03.28.51:421][  0]LogSlate: New Slate User Created.  User Index 0, Is Virtual User: 0
-[2019.06.12-03.28.51:422][  0]LogSlate: Slate User Registered.  User Index 0, Is Virtual User: 0
-[2019.06.12-03.28.56:767][  0]LogD3D11RHI: D3D11 adapters:
-[2019.06.12-03.28.56:856][  0]LogD3D11RHI:    0. 'NVIDIA GeForce GTX 1080 with Max-Q Design' (Feature Level 11_0)
-[2019.06.12-03.28.56:856][  0]LogD3D11RHI:       8079/0/12267 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x10de
-[2019.06.12-03.28.56:860][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
-[2019.06.12-03.28.56:860][  0]LogD3D11RHI:       0/0/12267 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
-[2019.06.12-03.28.56:860][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
-[2019.06.12-03.28.56:876][  0]LogD3D11RHI: Creating new Direct3DDevice
-[2019.06.12-03.28.56:876][  0]LogD3D11RHI:     GPU DeviceId: 0x1be0 (for the marketing name, search the web for "GPU Device Id")
-[2019.06.12-03.28.56:876][  0]LogWindows: EnumDisplayDevices:
-[2019.06.12-03.28.56:876][  0]LogWindows:    0. 'NVIDIA GeForce GTX 1080 with Max-Q Design' (P:1 D:1)
-[2019.06.12-03.28.56:876][  0]LogWindows:    1. 'NVIDIA GeForce GTX 1080 with Max-Q Design' (P:0 D:0)
-[2019.06.12-03.28.56:877][  0]LogWindows:    2. 'NVIDIA GeForce GTX 1080 with Max-Q Design' (P:0 D:0)
-[2019.06.12-03.28.56:877][  0]LogWindows:    3. 'NVIDIA GeForce GTX 1080 with Max-Q Design' (P:0 D:0)
-[2019.06.12-03.28.56:877][  0]LogWindows: DebugString: FoundDriverCount:4 
-[2019.06.12-03.28.56:878][  0]LogD3D11RHI:     Adapter Name: NVIDIA GeForce GTX 1080 with Max-Q Design
-[2019.06.12-03.28.56:878][  0]LogD3D11RHI:   Driver Version: 419.35 (internal:25.21.14.1935, unified:419.35)
-[2019.06.12-03.28.56:878][  0]LogD3D11RHI:      Driver Date: 3-1-2019
-[2019.06.12-03.28.56:878][  0]LogRHI: Texture pool is 5655 MB (70% of 8079 MB)
-[2019.06.12-03.28.56:925][  0]LogD3D11RHI: Async texture creation enabled
-[2019.06.12-03.28.56:937][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
-[2019.06.12-03.28.56:937][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
-[2019.06.12-03.28.56:937][  0]LogRendererCore: FGlobalReadBuffer::InitRHI
-[2019.06.12-03.28.56:947][  0]LogD3D11RHI: GPU Timing Frequency: 1000.000000 (Debug: 2 1)
-[2019.06.12-03.28.57:436][  0]LogTemp: Display: Module 'AllDesktopTargetPlatform' loaded TargetPlatform 'AllDesktop'
-[2019.06.12-03.28.57:454][  0]LogTemp: Display: Module 'MacClientTargetPlatform' loaded TargetPlatform 'MacClient'
-[2019.06.12-03.28.57:469][  0]LogTemp: Display: Module 'MacNoEditorTargetPlatform' loaded TargetPlatform 'MacNoEditor'
-[2019.06.12-03.28.57:489][  0]LogTemp: Display: Module 'MacServerTargetPlatform' loaded TargetPlatform 'MacServer'
-[2019.06.12-03.28.57:507][  0]LogTemp: Display: Module 'MacTargetPlatform' loaded TargetPlatform 'Mac'
-[2019.06.12-03.28.57:527][  0]LogTemp: Display: Module 'WindowsClientTargetPlatform' loaded TargetPlatform 'WindowsClient'
-[2019.06.12-03.28.57:543][  0]LogTemp: Display: Module 'WindowsNoEditorTargetPlatform' loaded TargetPlatform 'WindowsNoEditor'
-[2019.06.12-03.28.57:560][  0]LogTemp: Display: Module 'WindowsServerTargetPlatform' loaded TargetPlatform 'WindowsServer'
-[2019.06.12-03.28.57:568][  0]LogTemp: Display: Module 'WindowsTargetPlatform' loaded TargetPlatform 'Windows'
-[2019.06.12-03.28.57:663][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android'
-[2019.06.12-03.28.57:663][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTC'
-[2019.06.12-03.28.57:663][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATC'
-[2019.06.12-03.28.57:663][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXT'
-[2019.06.12-03.28.57:663][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1'
-[2019.06.12-03.28.57:663][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1a'
-[2019.06.12-03.28.57:663][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2'
-[2019.06.12-03.28.57:665][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTC'
-[2019.06.12-03.28.57:665][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'AndroidClient'
-[2019.06.12-03.28.57:665][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ASTCClient'
-[2019.06.12-03.28.57:665][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ATCClient'
-[2019.06.12-03.28.57:665][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_DXTClient'
-[2019.06.12-03.28.57:665][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1Client'
-[2019.06.12-03.28.57:665][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC1aClient'
-[2019.06.12-03.28.57:665][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_ETC2Client'
-[2019.06.12-03.28.57:665][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_PVRTCClient'
-[2019.06.12-03.28.57:665][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_Multi'
-[2019.06.12-03.28.57:665][  0]LogTemp: Display: Module 'AndroidTargetPlatform' loaded TargetPlatform 'Android_MultiClient'
-[2019.06.12-03.28.57:666][  0]LogTemp: Display: Module 'HTML5TargetPlatform' loaded TargetPlatform 'HTML5'
-[2019.06.12-03.28.57:722][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOSClient'
-[2019.06.12-03.28.57:722][  0]LogTemp: Display: Module 'IOSTargetPlatform' loaded TargetPlatform 'IOS'
-[2019.06.12-03.28.57:750][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOSClient'
-[2019.06.12-03.28.57:750][  0]LogTemp: Display: Module 'TVOSTargetPlatform' loaded TargetPlatform 'TVOS'
-[2019.06.12-03.28.57:766][  0]LogTemp: Display: Module 'LinuxClientTargetPlatform' loaded TargetPlatform 'LinuxClient'
-[2019.06.12-03.28.57:780][  0]LogTemp: Display: Module 'LinuxNoEditorTargetPlatform' loaded TargetPlatform 'LinuxNoEditor'
-[2019.06.12-03.28.57:794][  0]LogTemp: Display: Module 'LinuxServerTargetPlatform' loaded TargetPlatform 'LinuxServer'
-[2019.06.12-03.28.57:808][  0]LogTemp: Display: Module 'LinuxTargetPlatform' loaded TargetPlatform 'Linux'
-[2019.06.12-03.28.57:864][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'Lumin'
-[2019.06.12-03.28.57:864][  0]LogTemp: Display: Module 'LuminTargetPlatform' loaded TargetPlatform 'LuminClient'
-[2019.06.12-03.28.57:864][  0]LogTargetPlatformManager: Display: Building Assets For Windows
-[2019.06.12-03.28.57:875][  0]LogAudioDebug: Display: Lib vorbis DLL was dynamically loaded.
-[2019.06.12-03.28.57:943][  0]LogShaderCompilers: Guid format shader working directory is 0 characters bigger than the processId version (C:/Users/Darren Chua/Documents/VrProject/VrResearch/Intermediate/Shaders/WorkingDirectory/19736/).
-[2019.06.12-03.28.57:943][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/Darren Chua/AppData/Local/Temp/UnrealShaderWorkingDir/0449C52D457239D0F8BA428B1961375D/'.
-[2019.06.12-03.28.57:947][  0]LogXGEController: Cannot use XGE Controller as Incredibuild is not installed on this machine.
-[2019.06.12-03.28.57:947][  0]LogShaderCompilers: Cannot use XGE Shader Compiler as Incredibuild is not installed on this machine.
-[2019.06.12-03.28.57:948][  0]LogShaderCompilers: Display: Using Local Shader Compiler.
-[2019.06.12-03.28.58:616][  0]LogDerivedDataCache: Display: Max Cache Size: 512 MB
-[2019.06.12-03.28.58:679][  0]LogDerivedDataCache: Loaded boot cache 0.06s 72MB C:/Users/Darren Chua/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc.
-[2019.06.12-03.28.58:679][  0]LogDerivedDataCache: Display: Loaded Boot cache: C:/Users/Darren Chua/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc
-[2019.06.12-03.28.58:679][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file C:/Users/Darren Chua/Documents/VrProject/VrResearch/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
-[2019.06.12-03.28.58:680][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
-[2019.06.12-03.28.58:680][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file C:/Users/Darren Chua/Documents/VrProject/VrResearch/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.06.12-03.28.58:680][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
-[2019.06.12-03.28.58:694][  0]LogDerivedDataCache: Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
-[2019.06.12-03.28.58:694][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  EnterprisePak pak cache file ../../../Enterprise/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
-[2019.06.12-03.28.58:694][  0]LogDerivedDataCache: Unable to find inner node EnterprisePak for hierarchical cache Hierarchy.
-[2019.06.12-03.28.58:707][  0]LogDerivedDataCache: Using Local data cache path C:/Users/Darren Chua/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
-[2019.06.12-03.28.58:707][  0]LogDerivedDataCache: Shared data cache path not found in *engine.ini, will not use an Shared cache.
-[2019.06.12-03.28.58:707][  0]LogDerivedDataCache: Unable to find inner node Shared for hierarchical cache Hierarchy.
-[2019.06.12-03.28.58:738][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
-[2019.06.12-03.28.58:740][  0]LogSlate: Using FreeType 2.6.0
-[2019.06.12-03.28.58:740][  0]LogSlate: SlateFontServices - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
-[2019.06.12-03.28.58:855][  0]LogAssetRegistry: FAssetRegistry took 0.0369 seconds to start up
-[2019.06.12-03.28.59:295][  0]LogInit: Selected Device Profile: [Windows]
-[2019.06.12-03.28.59:462][  0]LogMeshReduction: Using QuadricMeshReduction for automatic static mesh reduction
-[2019.06.12-03.28.59:462][  0]LogMeshReduction: Using SimplygonMeshReduction for automatic skeletal mesh reduction
-[2019.06.12-03.28.59:462][  0]LogMeshReduction: Using ProxyLODMeshReduction for automatic mesh merging
-[2019.06.12-03.28.59:462][  0]LogMeshReduction: No distributed automatic mesh merging module available
-[2019.06.12-03.28.59:462][  0]LogMeshMerging: No distributed automatic mesh merging module available
-[2019.06.12-03.28.59:484][  0]LogNetVersion: VrResearch 1.0.0, NetCL: 5660361, EngineNetVer: 10, GameNetVer: 0 (Checksum: 3812351587)
-[2019.06.12-03.29.00:019][  0]LogPackageLocalizationCache: Processed 10 localized package path(s) for 1 prioritized culture(s) in 0.049957 seconds
-[2019.06.12-03.29.00:027][  0]LogUObjectArray: 42205 objects as part of root set at end of initial load.
-[2019.06.12-03.29.00:027][  0]LogUObjectAllocator: 7325032 out of 0 bytes used by permanent object pool.
-[2019.06.12-03.29.00:027][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
-[2019.06.12-03.29.01:163][  0]LogTcpMessaging: Initializing TcpMessaging bridge
-[2019.06.12-03.29.01:177][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
-[2019.06.12-03.29.01:296][  0]SourceControl: Source control is disabled
-[2019.06.12-03.29.01:297][  0]SourceControl: Source control is disabled
-[2019.06.12-03.29.01:299][  0]SourceControl: Source control is disabled
-[2019.06.12-03.29.01:300][  0]SourceControl: Source control is disabled
-[2019.06.12-03.29.01:387][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
-[2019.06.12-03.29.01:572][  0]LogOcInput: OculusInput pre-init called
-[2019.06.12-03.29.02:451][  0]LogEngine: Initializing Engine...
-[2019.06.12-03.29.02:455][  0]LogHMD: SteamVR initialized.  Driver: oculus  Display: OculusQuest
-[2019.06.12-03.29.02:456][  0]LogStats: UGameplayTagsManager::InitializeManager -  0.000 s
-[2019.06.12-03.29.02:715][  0]LogInit: Initializing FReadOnlyCVARCache
-[2019.06.12-03.29.02:737][  0]LogAIModule: Creating AISystem for world Untitled
-[2019.06.12-03.29.02:844][  0]LogAudio: Error: GetDeviceCount error: Unhandled error code -536870389
-[2019.06.12-03.29.02:844][  0]LogInit: No audio devices found!
-[2019.06.12-03.29.02:844][  0]LogNetVersion: Set ProjectVersion to 1.0.0.0. Version Checksum will be recalculated on next use.
-[2019.06.12-03.29.02:900][  0]LogDerivedDataCache: Saved boot cache 0.06s 72MB C:/Users/Darren Chua/AppData/Local/UnrealEngine/4.22/DerivedDataCache/Boot.ddc.
-[2019.06.12-03.29.02:911][  0]LogInit: Texture streaming: Enabled
-[2019.06.12-03.29.02:939][  0]LogEngineSessionManager: EngineSessionManager initialized
-[2019.06.12-03.29.02:968][  0]LogInit: Transaction tracking system initialized
-[2019.06.12-03.29.03:001][  0]BlueprintLog: New page: Editor Load
-[2019.06.12-03.29.03:131][  0]LocalizationService: Localization service is disabled
-[2019.06.12-03.29.03:456][  0]LogCook: Display: Max memory allowance for cook 16384mb min free memory 0mb
-[2019.06.12-03.29.03:456][  0]LogCook: Display: Mobile HDR setting 1
-[2019.06.12-03.29.03:481][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Content/' took 0.02s
-[2019.06.12-03.29.03:675][  0]SourceControl: Source control is disabled
-[2019.06.12-03.29.03:675][  0]Cmd: MAP LOAD FILE="C:/Users/Darren Chua/Documents/VrProject/VrResearch/Content/VirtualRealityBP/Maps/StartupMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2019.06.12-03.29.03:676][  0]LightingResults: New page: Lighting Build
-[2019.06.12-03.29.03:680][  0]MapCheck: New page: Map Check
-[2019.06.12-03.29.03:680][  0]LightingResults: New page: Lighting Build
-[2019.06.12-03.29.03:709][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.52ms
-[2019.06.12-03.29.03:811][  0]LogAIModule: Creating AISystem for world StartupMap
-[2019.06.12-03.29.03:819][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2019.06.12-03.29.03:848][  0]LogUObjectHash: Compacting FUObjectHashTables data took   1.76ms
-[2019.06.12-03.29.03:848][  0]Cmd: MAP CHECKDEP NOCLEARLOG
-[2019.06.12-03.29.03:849][  0]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.264ms to complete.
-[2019.06.12-03.29.03:849][  0]LogFileHelpers: Loading map 'StartupMap' took 0.173
-[2019.06.12-03.29.03:955][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-03.29.03:962][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-03.29.03:971][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-03.29.03:978][  0]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-03.29.03:986][  0]LogCollectionManager: Loaded 0 collections in 0.002545 seconds
-[2019.06.12-03.29.04:003][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Collections/' took 0.01s
-[2019.06.12-03.29.04:003][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Content/Developers/DarrenChua/Collections/' took 0.00s
-[2019.06.12-03.29.04:003][  0]LogFileCache: Scanning file cache for directory 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Content/Collections/' took 0.00s
-[2019.06.12-03.29.04:003][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000000 seconds
-[2019.06.12-03.29.04:012][  0]LogContentBrowser: Native class hierarchy populated in 0.0090 seconds. Added 2732 classes and 659 folders.
-[2019.06.12-03.29.04:022][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2019.06.12-03.29.04:023][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:024][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:024][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:025][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:025][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:026][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:026][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:027][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:027][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:028][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:028][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:029][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:030][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:031][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:031][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:032][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:032][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:033][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:033][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:034][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:035][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:035][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:036][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:036][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:037][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:037][  0]LogPakFile: Registered encryption key '00000000000000000000000000000000': 0 pak files mounted, 0 remain pending
-[2019.06.12-03.29.04:091][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2019.06.12-03.29.04:097][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0003 seconds. Added 1 classes and 2 folders.
-[2019.06.12-03.29.04:117][  0]LogSlate: Took 0.000217 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
-[2019.06.12-03.29.04:120][  0]LogSlate: Took 0.000353 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
-[2019.06.12-03.29.04:129][  0]LogSlate: Took 0.000461 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
-[2019.06.12-03.29.04:207][  0]LogRenderer: Reallocating scene render targets to support 1020x572 Format 26 NumSamples 1 (Frame:1).
-[2019.06.12-03.29.04:438][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0003 seconds. Added 0 classes and 0 folders.
-[2019.06.12-03.29.04:438][  0]LogLoad: (Engine Initialization) Total time: 16.93 seconds
-[2019.06.12-03.29.04:438][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.00 seconds
-[2019.06.12-03.29.04:517][  0]LogAssetRegistry: Asset discovery search completed in 5.6848 seconds
-[2019.06.12-03.29.04:521][  0]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000001 seconds (found 0 objects)
-[2019.06.12-03.29.04:521][  0]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000066 seconds (updated 0 objects)
-[2019.06.12-03.29.04:523][  0]LogContentStreaming: Texture pool size now 1000 MB
-[2019.06.12-03.29.04:551][  0]LogSlate: Took 0.000202 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2019.06.12-03.29.07:814][ 10]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-03.29.08:134][ 10]LogAIModule: Creating AISystem for world MotionControllerMap
-[2019.06.12-03.29.09:672][ 41]LogSlate: Took 0.000197 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (167K)
-[2019.06.12-03.29.09:681][ 41]LogAssetEditorManager: Opening Asset editor for World /Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap
-[2019.06.12-03.29.09:711][ 41]LogUObjectHash: Compacting FUObjectHashTables data took   2.52ms
-[2019.06.12-03.29.09:713][ 41]Cmd: MAP LOAD FILE="C:/Users/Darren Chua/Documents/VrProject/VrResearch/Content/VirtualRealityBP/Maps/MotionControllerMap.umap" TEMPLATE=0 SHOWPROGRESS=1 FEATURELEVEL=3
-[2019.06.12-03.29.09:713][ 41]LightingResults: New page: Lighting Build
-[2019.06.12-03.29.09:713][ 41]LoadErrors: New page: Loading map: MotionControllerMap.umap
-[2019.06.12-03.29.09:715][ 41]MapCheck: New page: Map Check
-[2019.06.12-03.29.09:715][ 41]LightingResults: New page: Lighting Build
-[2019.06.12-03.29.09:743][ 41]LogUObjectHash: Compacting FUObjectHashTables data took   1.76ms
-[2019.06.12-03.29.09:747][ 41]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
-[2019.06.12-03.29.09:778][ 41]LogUObjectHash: Compacting FUObjectHashTables data took   1.55ms
-[2019.06.12-03.29.09:799][ 41]Cmd: MAP CHECKDEP NOCLEARLOG
-[2019.06.12-03.29.09:799][ 41]MapCheck: Map check complete: 0 Error(s), 0 Warning(s), took 0.113ms to complete.
-[2019.06.12-03.29.09:801][ 41]LogFileHelpers: Loading map 'MotionControllerMap' took 0.089
-[2019.06.12-03.29.12:355][158]LogTemp: Repeating last play command: VR Preview
-[2019.06.12-03.29.12:370][158]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.29.12:370][158]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.06.12-03.29.12:370][158]PIE: New page: PIE session: MotionControllerMap (12 Jun 2019 7:29:12 pm)
-[2019.06.12-03.29.12:383][158]LogPlayLevel: Creating play world package: /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap
-[2019.06.12-03.29.12:391][158]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007231s)
-[2019.06.12-03.29.12:391][158]LogAIModule: Creating AISystem for world MotionControllerMap
-[2019.06.12-03.29.12:391][158]LogPlayLevel: PIE: World Init took: (0.000624s)
-[2019.06.12-03.29.12:391][158]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap to /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap (0.008232s)
-[2019.06.12-03.29.12:417][158]LogUObjectHash: Compacting FUObjectHashTables data took   1.58ms
-[2019.06.12-03.29.12:429][158]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-03.29.12:474][158]LogLoad: Game class is 'GameMode'
-[2019.06.12-03.29.12:476][158]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap up for play (max tick rate 0) at 2019.06.12-11.29.12
-[2019.06.12-03.29.12:477][158]LogWorld: Bringing up level for play took: 0.001280
-[2019.06.12-03.29.12:495][158]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0003 seconds. Added 20 classes and 0 folders.
-[2019.06.12-03.29.12:496][158]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.29.12:496][158]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.29.12:496][158]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.29.12:501][158]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.29.12:503][158]PIE: Play in editor start time for /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap 0.45
-[2019.06.12-03.29.12:504][158]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.29.12:565][160]LogRenderer: Reallocating scene render targets to support 3648x2016 Format 26 NumSamples 1 (Frame:1).
-[2019.06.12-03.29.16:781][200]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s)
-[2019.06.12-03.29.22:952][425]LogGameMode: Display: Match State Changed from InProgress to LeavingMap
-[2019.06.12-03.29.22:952][425]LogGameState: Match State Changed from InProgress to LeavingMap
-[2019.06.12-03.29.22:953][425]LogNet: Browse: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-03.29.22:977][425]LogLoad: LoadMap: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-03.29.23:006][425]LogUObjectHash: Compacting FUObjectHashTables data took   1.53ms
-[2019.06.12-03.29.23:333][425]LogAIModule: Creating AISystem for world City
-[2019.06.12-03.29.23:333][425]LogLoad: Game class is 'GameMode'
-[2019.06.12-03.29.23:392][425]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_City.City up for play (max tick rate 0) at 2019.06.12-11.29.23
-[2019.06.12-03.29.23:393][425]LogWorld: Bringing up level for play took: 0.058580
-[2019.06.12-03.29.23:393][425]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
-[2019.06.12-03.29.23:394][425]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.29.23:394][425]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.29.23:394][425]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.29.23:397][425]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.29.23:397][425]LogLoad: Took 0.419935 seconds to LoadMap(/Game/VirtualRealityBP/Maps/City)
-[2019.06.12-03.33.47:726][462]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.33.47:846][462]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-03.33.47:879][462]LogSlate: Window 'VrResearch Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2019.06.12-03.33.47:929][462]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.06.12-03.33.47:929][462]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.33.47:966][462]LogUObjectHash: Compacting FUObjectHashTables data took   3.42ms
-[2019.06.12-03.33.47:984][463]LogPlayLevel: Display: Destroying online subsystem :Context_1
-[2019.06.12-03.37.51:178][150]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s)
-[2019.06.12-03.39.29:730][640]LogTemp: Repeating last play command: VR Preview
-[2019.06.12-03.39.29:746][640]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.39.29:746][640]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.06.12-03.39.29:746][640]PIE: New page: PIE session: MotionControllerMap (12 Jun 2019 7:39:29 pm)
-[2019.06.12-03.39.29:747][640]LogPlayLevel: Creating play world package: /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap
-[2019.06.12-03.39.29:754][640]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007237s)
-[2019.06.12-03.39.29:755][640]LogAIModule: Creating AISystem for world MotionControllerMap
-[2019.06.12-03.39.29:755][640]LogPlayLevel: PIE: World Init took: (0.000676s)
-[2019.06.12-03.39.29:755][640]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap to /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap (0.008420s)
-[2019.06.12-03.39.29:782][640]LogUObjectHash: Compacting FUObjectHashTables data took   1.64ms
-[2019.06.12-03.39.29:795][640]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-03.39.29:829][640]LogLoad: Game class is 'GameMode'
-[2019.06.12-03.39.29:831][640]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap up for play (max tick rate 0) at 2019.06.12-11.39.29
-[2019.06.12-03.39.29:832][640]LogWorld: Bringing up level for play took: 0.002069
-[2019.06.12-03.39.29:845][640]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.39.29:845][640]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.39.29:845][640]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.39.29:850][640]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.39.29:853][640]PIE: Play in editor start time for /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap -0.2
-[2019.06.12-03.39.29:854][640]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.39.43:285][850]LogGameMode: Display: Match State Changed from InProgress to LeavingMap
-[2019.06.12-03.39.43:286][850]LogGameState: Match State Changed from InProgress to LeavingMap
-[2019.06.12-03.39.43:286][850]LogNet: Browse: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-03.39.43:310][850]LogLoad: LoadMap: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-03.39.43:339][850]LogUObjectHash: Compacting FUObjectHashTables data took   1.46ms
-[2019.06.12-03.39.43:374][850]LogAIModule: Creating AISystem for world City
-[2019.06.12-03.39.43:374][850]LogLoad: Game class is 'GameMode'
-[2019.06.12-03.39.43:431][850]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_City.City up for play (max tick rate 0) at 2019.06.12-11.39.43
-[2019.06.12-03.39.43:432][850]LogWorld: Bringing up level for play took: 0.057680
-[2019.06.12-03.39.43:433][850]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
-[2019.06.12-03.39.43:433][850]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.39.43:433][850]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.39.43:433][850]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.39.43:436][850]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.39.43:436][850]LogLoad: Took 0.125969 seconds to LoadMap(/Game/VirtualRealityBP/Maps/City)
-[2019.06.12-03.44.24:575][  3]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.44.24:693][  3]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-03.44.24:722][  3]LogSlate: Window 'VrResearch Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2019.06.12-03.44.24:763][  3]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.06.12-03.44.24:764][  3]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.44.24:796][  3]LogUObjectHash: Compacting FUObjectHashTables data took   1.97ms
-[2019.06.12-03.44.24:808][  4]LogPlayLevel: Display: Destroying online subsystem :Context_2
-[2019.06.12-03.49.51:786][486]LogEditorViewport: Clicking on Actor (LMB): BP_PickupCube_C (EditorCube37)
-[2019.06.12-03.49.54:961][577]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2019.06.12-03.49.55:998][607]LogSlate: Took 0.000336 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Italic.ttf' (157K)
-[2019.06.12-03.49.57:565][647]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/VirtualRealityBP/Blueprints/BP_PickupCube.BP_PickupCube
-[2019.06.12-03.49.57:930][647]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0007 seconds. Added 121 classes and 0 folders.
-[2019.06.12-03.49.58:824][647]LogSlate: Took 0.000286 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
-[2019.06.12-03.49.59:408][651]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s)
-[2019.06.12-03.50.22:510][115]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s)
-[2019.06.12-03.50.48:552][708]BlueprintLog: New page: Compile BP_PickupCube
-[2019.06.12-03.50.49:340][708]LogUObjectHash: Compacting FUObjectHashTables data took   4.33ms
-[2019.06.12-03.50.49:610][708]LogSavePackage: Moving 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/BP_PickupCube8AEC547C45A56AA7941D1AA5B1AAEF7B.tmp' to 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Content/VirtualRealityBP/Blueprints/BP_PickupCube.uasset'
-[2019.06.12-03.50.51:585][754]BlueprintLog: New page: Compile BP_PickupCube
-[2019.06.12-03.50.51:778][754]LogUObjectHash: Compacting FUObjectHashTables data took   3.74ms
-[2019.06.12-03.50.51:880][754]LogSavePackage: Moving 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/BP_PickupCube301E2BAC41CB62A80AA39CA4717F8E63.tmp' to 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Content/VirtualRealityBP/Blueprints/BP_PickupCube.uasset'
-[2019.06.12-03.51.04:045][107]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
-[2019.06.12-03.52.20:037][882]BlueprintLog: New page: Compile MotionControllerPawn
-[2019.06.12-03.52.20:227][882]LogUObjectHash: Compacting FUObjectHashTables data took   4.14ms
-[2019.06.12-03.52.20:362][882]LogSavePackage: Moving 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/MotionControllerPawnAC8BBCE641848738C0C7EEB51AF841E5.tmp' to 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
-[2019.06.12-03.53.39:508][353]LogSlate: Window 'MotionControllerPawn' being destroyed
-[2019.06.12-03.53.39:512][353]LogSlate: Window 'MotionControllerPawn' being destroyed
-[2019.06.12-03.53.39:577][353]LogActorComponent: UnregisterComponent: (/Engine/Transient.EditorFloorComp) Not registered. Aborting.
-[2019.06.12-03.53.42:057][360]LogTemp: Repeating last play command: VR Preview
-[2019.06.12-03.53.42:072][360]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.53.42:072][360]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.06.12-03.53.42:072][360]PIE: New page: PIE session: MotionControllerMap (12 Jun 2019 7:53:42 pm)
-[2019.06.12-03.53.42:073][360]LogPlayLevel: Creating play world package: /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap
-[2019.06.12-03.53.42:079][360]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006731s)
-[2019.06.12-03.53.42:080][360]LogAIModule: Creating AISystem for world MotionControllerMap
-[2019.06.12-03.53.42:080][360]LogPlayLevel: PIE: World Init took: (0.000833s)
-[2019.06.12-03.53.42:080][360]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap to /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap (0.007737s)
-[2019.06.12-03.53.42:116][360]LogUObjectHash: Compacting FUObjectHashTables data took   3.16ms
-[2019.06.12-03.53.42:125][360]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-03.53.42:159][360]LogLoad: Game class is 'GameMode'
-[2019.06.12-03.53.42:161][360]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap up for play (max tick rate 0) at 2019.06.12-11.53.42
-[2019.06.12-03.53.42:161][360]LogWorld: Bringing up level for play took: 0.001406
-[2019.06.12-03.53.42:173][360]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.53.42:173][360]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.53.42:173][360]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.53.42:176][360]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.53.42:182][360]PIE: Play in editor start time for /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap 0.129
-[2019.06.12-03.53.42:182][360]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.53.58:501][520]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.53.58:772][520]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-03.53.58:800][520]LogSlate: Window 'VrResearch Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2019.06.12-03.53.58:833][520]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.06.12-03.53.58:834][520]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.53.58:871][520]LogUObjectHash: Compacting FUObjectHashTables data took   2.14ms
-[2019.06.12-03.53.58:884][521]LogPlayLevel: Display: Destroying online subsystem :Context_10
-[2019.06.12-03.54.31:908][687]LogTemp: Repeating last play command: VR Preview
-[2019.06.12-03.54.31:924][687]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.54.31:924][687]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.06.12-03.54.31:924][687]PIE: New page: PIE session: MotionControllerMap (12 Jun 2019 7:54:31 pm)
-[2019.06.12-03.54.31:924][687]LogPlayLevel: Creating play world package: /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap
-[2019.06.12-03.54.31:932][687]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007460s)
-[2019.06.12-03.54.31:932][687]LogAIModule: Creating AISystem for world MotionControllerMap
-[2019.06.12-03.54.31:932][687]LogPlayLevel: PIE: World Init took: (0.000577s)
-[2019.06.12-03.54.31:932][687]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap to /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap (0.008157s)
-[2019.06.12-03.54.31:966][687]LogUObjectHash: Compacting FUObjectHashTables data took   1.90ms
-[2019.06.12-03.54.31:979][687]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-03.54.32:011][687]LogLoad: Game class is 'GameMode'
-[2019.06.12-03.54.32:013][687]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap up for play (max tick rate 0) at 2019.06.12-11.54.32
-[2019.06.12-03.54.32:014][687]LogWorld: Bringing up level for play took: 0.001553
-[2019.06.12-03.54.32:027][687]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.54.32:027][687]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.54.32:027][687]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.54.32:031][687]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.54.32:034][687]PIE: Play in editor start time for /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap -0.02
-[2019.06.12-03.54.32:034][687]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.55.29:131][691]LogGameMode: Display: Match State Changed from InProgress to LeavingMap
-[2019.06.12-03.55.29:131][691]LogGameState: Match State Changed from InProgress to LeavingMap
-[2019.06.12-03.55.29:132][691]LogNet: Browse: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-03.55.29:155][691]LogLoad: LoadMap: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-03.55.29:190][691]LogUObjectHash: Compacting FUObjectHashTables data took   2.33ms
-[2019.06.12-03.55.29:222][691]LogAIModule: Creating AISystem for world City
-[2019.06.12-03.55.29:223][691]LogLoad: Game class is 'GameMode'
-[2019.06.12-03.55.29:268][691]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_City.City up for play (max tick rate 0) at 2019.06.12-11.55.29
-[2019.06.12-03.55.29:269][691]LogWorld: Bringing up level for play took: 0.045213
-[2019.06.12-03.55.29:269][691]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
-[2019.06.12-03.55.29:270][691]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.55.29:270][691]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.55.29:270][691]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.55.29:272][691]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.55.29:272][691]LogLoad: Took 0.116588 seconds to LoadMap(/Game/VirtualRealityBP/Maps/City)
-[2019.06.12-03.56.02:104][  5]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.56.02:195][  5]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-03.56.02:221][  5]LogSlate: Window 'VrResearch Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2019.06.12-03.56.02:259][  5]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.06.12-03.56.02:259][  5]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.56.02:296][  5]LogUObjectHash: Compacting FUObjectHashTables data took   3.08ms
-[2019.06.12-03.56.02:306][  6]LogPlayLevel: Display: Destroying online subsystem :Context_11
-[2019.06.12-03.56.55:337][924]LogEditorViewport: Clicking on Actor (LMB): MotionControllerPawn_C (MotionControllerPawn)
-[2019.06.12-03.56.57:482][  9]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2019.06.12-03.57.00:397][ 86]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2019.06.12-03.57.00:400][ 86]LogAssetEditorManager: Opening Asset editor for Blueprint /Game/VirtualRealityBP/Blueprints/MotionControllerPawn.MotionControllerPawn
-[2019.06.12-03.57.11:239][361]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-03.57.11:387][364]BlueprintLog: New page: Compile MotionControllerPawn
-[2019.06.12-03.57.11:634][364]LogUObjectHash: Compacting FUObjectHashTables data took   3.61ms
-[2019.06.12-03.57.11:769][364]LogSavePackage: Moving 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/MotionControllerPawn30A9A2D1410F9FB7A1D15C9EFEA3E234.tmp' to 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
-[2019.06.12-03.57.14:607][437]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-03.57.17:179][506]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-03.57.17:329][509]LogTemp: Repeating last play command: VR Preview
-[2019.06.12-03.57.17:342][509]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.57.17:342][509]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.06.12-03.57.17:342][509]PIE: New page: PIE session: MotionControllerMap (12 Jun 2019 7:57:17 pm)
-[2019.06.12-03.57.17:342][509]LogPlayLevel: Creating play world package: /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap
-[2019.06.12-03.57.17:349][509]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006733s)
-[2019.06.12-03.57.17:349][509]LogAIModule: Creating AISystem for world MotionControllerMap
-[2019.06.12-03.57.17:349][509]LogPlayLevel: PIE: World Init took: (0.000493s)
-[2019.06.12-03.57.17:349][509]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap to /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap (0.007341s)
-[2019.06.12-03.57.17:386][509]LogUObjectHash: Compacting FUObjectHashTables data took   3.78ms
-[2019.06.12-03.57.17:398][509]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-03.57.17:433][509]LogLoad: Game class is 'GameMode'
-[2019.06.12-03.57.17:435][509]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap up for play (max tick rate 0) at 2019.06.12-11.57.17
-[2019.06.12-03.57.17:435][509]LogWorld: Bringing up level for play took: 0.001151
-[2019.06.12-03.57.17:448][509]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.57.17:448][509]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.57.17:448][509]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.57.17:452][509]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.57.17:457][509]PIE: Play in editor start time for /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap -0.596
-[2019.06.12-03.57.17:457][509]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.57.42:579][ 51]LogGameMode: Display: Match State Changed from InProgress to LeavingMap
-[2019.06.12-03.57.42:579][ 51]LogGameState: Match State Changed from InProgress to LeavingMap
-[2019.06.12-03.57.42:579][ 51]LogNet: Browse: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-03.57.42:603][ 51]LogLoad: LoadMap: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-03.57.42:640][ 51]LogUObjectHash: Compacting FUObjectHashTables data took   2.29ms
-[2019.06.12-03.57.42:674][ 51]LogAIModule: Creating AISystem for world City
-[2019.06.12-03.57.42:674][ 51]LogLoad: Game class is 'GameMode'
-[2019.06.12-03.57.42:730][ 51]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_City.City up for play (max tick rate 0) at 2019.06.12-11.57.42
-[2019.06.12-03.57.42:730][ 51]LogWorld: Bringing up level for play took: 0.055417
-[2019.06.12-03.57.42:731][ 51]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
-[2019.06.12-03.57.42:731][ 51]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.57.42:731][ 51]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.57.42:731][ 51]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.57.42:733][ 51]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.57.42:733][ 51]LogLoad: Took 0.130045 seconds to LoadMap(/Game/VirtualRealityBP/Maps/City)
-[2019.06.12-03.57.54:867][537]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.57.54:963][537]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-03.57.55:031][537]LogSlate: Window 'VrResearch Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2019.06.12-03.57.55:069][537]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.06.12-03.57.55:070][537]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.57.55:122][537]LogUObjectHash: Compacting FUObjectHashTables data took   2.68ms
-[2019.06.12-03.57.55:137][538]LogPlayLevel: Display: Destroying online subsystem :Context_13
-[2019.06.12-03.57.57:654][629]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-03.58.01:579][704]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-03.58.01:653][705]BlueprintLog: New page: Compile MotionControllerPawn
-[2019.06.12-03.58.01:867][705]LogUObjectHash: Compacting FUObjectHashTables data took   3.00ms
-[2019.06.12-03.58.02:017][705]LogSavePackage: Moving 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/MotionControllerPawn0B21883B417B1C03FB5F9EB617961CC2.tmp' to 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
-[2019.06.12-03.58.04:201][748]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-03.58.05:170][772]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-03.58.05:237][774]LogTemp: Repeating last play command: VR Preview
-[2019.06.12-03.58.05:258][774]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.58.05:258][774]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.06.12-03.58.05:258][774]PIE: New page: PIE session: MotionControllerMap (12 Jun 2019 7:58:05 pm)
-[2019.06.12-03.58.05:258][774]LogPlayLevel: Creating play world package: /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap
-[2019.06.12-03.58.05:267][774]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008854s)
-[2019.06.12-03.58.05:268][774]LogAIModule: Creating AISystem for world MotionControllerMap
-[2019.06.12-03.58.05:268][774]LogPlayLevel: PIE: World Init took: (0.000822s)
-[2019.06.12-03.58.05:268][774]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap to /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap (0.009844s)
-[2019.06.12-03.58.05:307][774]LogUObjectHash: Compacting FUObjectHashTables data took   2.82ms
-[2019.06.12-03.58.05:315][774]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-03.58.05:344][774]LogLoad: Game class is 'GameMode'
-[2019.06.12-03.58.05:346][774]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap up for play (max tick rate 0) at 2019.06.12-11.58.05
-[2019.06.12-03.58.05:346][774]LogWorld: Bringing up level for play took: 0.001441
-[2019.06.12-03.58.05:359][774]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.58.05:359][774]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.58.05:359][774]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.58.05:362][774]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.58.05:366][774]PIE: Play in editor start time for /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap -0.687
-[2019.06.12-03.58.05:366][774]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.58.29:587][  1]LogGameMode: Display: Match State Changed from InProgress to LeavingMap
-[2019.06.12-03.58.29:587][  1]LogGameState: Match State Changed from InProgress to LeavingMap
-[2019.06.12-03.58.29:587][  1]LogNet: Browse: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-03.58.29:611][  1]LogLoad: LoadMap: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-03.58.29:650][  1]LogUObjectHash: Compacting FUObjectHashTables data took   2.07ms
-[2019.06.12-03.58.29:684][  1]LogAIModule: Creating AISystem for world City
-[2019.06.12-03.58.29:685][  1]LogLoad: Game class is 'GameMode'
-[2019.06.12-03.58.29:733][  1]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_City.City up for play (max tick rate 0) at 2019.06.12-11.58.29
-[2019.06.12-03.58.29:734][  1]LogWorld: Bringing up level for play took: 0.048307
-[2019.06.12-03.58.29:735][  1]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
-[2019.06.12-03.58.29:735][  1]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.58.29:735][  1]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.58.29:735][  1]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.58.29:737][  1]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.58.29:737][  1]LogLoad: Took 0.125649 seconds to LoadMap(/Game/VirtualRealityBP/Maps/City)
-[2019.06.12-03.58.34:021][170]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.58.34:113][170]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-03.58.34:146][170]LogSlate: Window 'VrResearch Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2019.06.12-03.58.34:185][170]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.06.12-03.58.34:185][170]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.58.34:231][170]LogUObjectHash: Compacting FUObjectHashTables data took   3.64ms
-[2019.06.12-03.58.34:249][171]LogPlayLevel: Display: Destroying online subsystem :Context_14
-[2019.06.12-03.58.37:263][271]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-03.58.45:138][427]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-03.58.45:212][428]BlueprintLog: New page: Compile MotionControllerPawn
-[2019.06.12-03.58.45:430][428]LogUObjectHash: Compacting FUObjectHashTables data took   3.27ms
-[2019.06.12-03.58.45:573][428]LogSavePackage: Moving 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/MotionControllerPawn38029EBB4613C2F1982469BC0C9EEF0A.tmp' to 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
-[2019.06.12-03.58.48:255][481]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-03.58.49:370][522]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-03.58.49:453][527]LogTemp: Repeating last play command: VR Preview
-[2019.06.12-03.58.49:470][527]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.58.49:470][527]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.06.12-03.58.49:470][527]PIE: New page: PIE session: MotionControllerMap (12 Jun 2019 7:58:49 pm)
-[2019.06.12-03.58.49:470][527]LogPlayLevel: Creating play world package: /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap
-[2019.06.12-03.58.49:478][527]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007856s)
-[2019.06.12-03.58.49:478][527]LogAIModule: Creating AISystem for world MotionControllerMap
-[2019.06.12-03.58.49:479][527]LogPlayLevel: PIE: World Init took: (0.000719s)
-[2019.06.12-03.58.49:479][527]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap to /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap (0.008720s)
-[2019.06.12-03.58.49:516][527]LogUObjectHash: Compacting FUObjectHashTables data took   3.53ms
-[2019.06.12-03.58.49:525][527]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-03.58.49:558][527]LogLoad: Game class is 'GameMode'
-[2019.06.12-03.58.49:559][527]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap up for play (max tick rate 0) at 2019.06.12-11.58.49
-[2019.06.12-03.58.49:559][527]LogWorld: Bringing up level for play took: 0.001264
-[2019.06.12-03.58.49:572][527]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.58.49:572][527]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.58.49:572][527]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.58.49:574][527]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.58.49:578][527]PIE: Play in editor start time for /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap -0.476
-[2019.06.12-03.58.49:579][527]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.59.17:170][693]LogGameMode: Display: Match State Changed from InProgress to LeavingMap
-[2019.06.12-03.59.17:170][693]LogGameState: Match State Changed from InProgress to LeavingMap
-[2019.06.12-03.59.17:171][693]LogNet: Browse: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-03.59.17:195][693]LogLoad: LoadMap: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-03.59.17:233][693]LogUObjectHash: Compacting FUObjectHashTables data took   2.72ms
-[2019.06.12-03.59.17:265][693]LogAIModule: Creating AISystem for world City
-[2019.06.12-03.59.17:266][693]LogLoad: Game class is 'GameMode'
-[2019.06.12-03.59.17:318][693]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_City.City up for play (max tick rate 0) at 2019.06.12-11.59.17
-[2019.06.12-03.59.17:319][693]LogWorld: Bringing up level for play took: 0.052259
-[2019.06.12-03.59.17:320][693]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
-[2019.06.12-03.59.17:320][693]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.59.17:320][693]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.59.17:320][693]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.59.17:323][693]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.59.17:323][693]LogLoad: Took 0.128089 seconds to LoadMap(/Game/VirtualRealityBP/Maps/City)
-[2019.06.12-03.59.37:406][497]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.59.37:504][497]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-03.59.37:536][497]LogSlate: Window 'VrResearch Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2019.06.12-03.59.37:574][497]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.06.12-03.59.37:575][497]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.59.37:619][497]LogUObjectHash: Compacting FUObjectHashTables data took   2.32ms
-[2019.06.12-03.59.37:635][498]LogPlayLevel: Display: Destroying online subsystem :Context_15
-[2019.06.12-03.59.38:837][538]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-03.59.38:936][541]LogTemp: Repeating last play command: VR Preview
-[2019.06.12-03.59.38:954][541]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-03.59.38:954][541]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.06.12-03.59.38:954][541]PIE: New page: PIE session: MotionControllerMap (12 Jun 2019 7:59:38 pm)
-[2019.06.12-03.59.38:954][541]LogPlayLevel: Creating play world package: /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap
-[2019.06.12-03.59.38:962][541]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007770s)
-[2019.06.12-03.59.38:962][541]LogAIModule: Creating AISystem for world MotionControllerMap
-[2019.06.12-03.59.38:963][541]LogPlayLevel: PIE: World Init took: (0.000590s)
-[2019.06.12-03.59.38:963][541]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap to /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap (0.008522s)
-[2019.06.12-03.59.38:997][541]LogUObjectHash: Compacting FUObjectHashTables data took   3.00ms
-[2019.06.12-03.59.39:007][541]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-03.59.39:038][541]LogLoad: Game class is 'GameMode'
-[2019.06.12-03.59.39:040][541]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap up for play (max tick rate 0) at 2019.06.12-11.59.39
-[2019.06.12-03.59.39:041][541]LogWorld: Bringing up level for play took: 0.001551
-[2019.06.12-03.59.39:054][541]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.59.39:054][541]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-03.59.39:054][541]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.59.39:057][541]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-03.59.39:063][541]PIE: Play in editor start time for /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap 1.01
-[2019.06.12-03.59.39:063][541]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.00.36:479][ 43]LogGameMode: Display: Match State Changed from InProgress to LeavingMap
-[2019.06.12-04.00.36:479][ 43]LogGameState: Match State Changed from InProgress to LeavingMap
-[2019.06.12-04.00.36:479][ 43]LogNet: Browse: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-04.00.36:504][ 43]LogLoad: LoadMap: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-04.00.36:541][ 43]LogUObjectHash: Compacting FUObjectHashTables data took   2.11ms
-[2019.06.12-04.00.36:577][ 43]LogAIModule: Creating AISystem for world City
-[2019.06.12-04.00.36:577][ 43]LogLoad: Game class is 'GameMode'
-[2019.06.12-04.00.36:628][ 43]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_City.City up for play (max tick rate 0) at 2019.06.12-12.00.36
-[2019.06.12-04.00.36:629][ 43]LogWorld: Bringing up level for play took: 0.051003
-[2019.06.12-04.00.36:630][ 43]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
-[2019.06.12-04.00.36:630][ 43]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.00.36:630][ 43]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.00.36:630][ 43]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.00.36:632][ 43]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.00.36:633][ 43]LogLoad: Took 0.128732 seconds to LoadMap(/Game/VirtualRealityBP/Maps/City)
-[2019.06.12-04.00.49:620][564]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.00.49:716][564]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-04.00.49:751][564]LogSlate: Window 'VrResearch Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2019.06.12-04.00.49:793][564]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.06.12-04.00.49:794][564]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.00.49:841][564]LogUObjectHash: Compacting FUObjectHashTables data took   2.23ms
-[2019.06.12-04.00.49:856][565]LogPlayLevel: Display: Destroying online subsystem :Context_16
-[2019.06.12-04.00.51:154][613]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-04.00.51:253][616]LogTemp: Repeating last play command: VR Preview
-[2019.06.12-04.00.51:270][616]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.00.51:270][616]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.06.12-04.00.51:270][616]PIE: New page: PIE session: MotionControllerMap (12 Jun 2019 8:00:51 pm)
-[2019.06.12-04.00.51:270][616]LogPlayLevel: Creating play world package: /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap
-[2019.06.12-04.00.51:278][616]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008131s)
-[2019.06.12-04.00.51:279][616]LogAIModule: Creating AISystem for world MotionControllerMap
-[2019.06.12-04.00.51:279][616]LogPlayLevel: PIE: World Init took: (0.000733s)
-[2019.06.12-04.00.51:279][616]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap to /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap (0.009031s)
-[2019.06.12-04.00.51:311][616]LogUObjectHash: Compacting FUObjectHashTables data took   2.29ms
-[2019.06.12-04.00.51:322][616]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-04.00.51:351][616]LogLoad: Game class is 'GameMode'
-[2019.06.12-04.00.51:353][616]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap up for play (max tick rate 0) at 2019.06.12-12.00.51
-[2019.06.12-04.00.51:353][616]LogWorld: Bringing up level for play took: 0.001296
-[2019.06.12-04.00.51:365][616]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.00.51:365][616]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.00.51:365][616]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.00.51:369][616]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.00.51:375][616]PIE: Play in editor start time for /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap -0.678
-[2019.06.12-04.00.51:375][616]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.01.08:687][321]LogGameMode: Display: Match State Changed from InProgress to LeavingMap
-[2019.06.12-04.01.08:687][321]LogGameState: Match State Changed from InProgress to LeavingMap
-[2019.06.12-04.01.08:687][321]LogNet: Browse: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-04.01.08:711][321]LogLoad: LoadMap: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-04.01.08:749][321]LogUObjectHash: Compacting FUObjectHashTables data took   2.16ms
-[2019.06.12-04.01.08:787][321]LogAIModule: Creating AISystem for world City
-[2019.06.12-04.01.08:788][321]LogLoad: Game class is 'GameMode'
-[2019.06.12-04.01.08:835][321]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_City.City up for play (max tick rate 0) at 2019.06.12-12.01.08
-[2019.06.12-04.01.08:836][321]LogWorld: Bringing up level for play took: 0.047814
-[2019.06.12-04.01.08:837][321]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
-[2019.06.12-04.01.08:837][321]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.01.08:837][321]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.01.08:837][321]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.01.08:841][321]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.01.08:841][321]LogLoad: Took 0.129265 seconds to LoadMap(/Game/VirtualRealityBP/Maps/City)
-[2019.06.12-04.01.13:583][512]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.01.13:671][512]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-04.01.13:706][512]LogSlate: Window 'VrResearch Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2019.06.12-04.01.13:749][512]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.06.12-04.01.13:749][512]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.01.13:796][512]LogUObjectHash: Compacting FUObjectHashTables data took   2.48ms
-[2019.06.12-04.01.13:809][513]LogPlayLevel: Display: Destroying online subsystem :Context_17
-[2019.06.12-04.01.15:587][576]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-04.01.22:237][706]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-04.01.22:312][707]BlueprintLog: New page: Compile MotionControllerPawn
-[2019.06.12-04.01.22:537][707]LogUObjectHash: Compacting FUObjectHashTables data took   2.97ms
-[2019.06.12-04.01.22:660][707]LogSavePackage: Moving 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/MotionControllerPawn4D5575FF46D92B0B67D1BB8BCE2C1C5A.tmp' to 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
-[2019.06.12-04.01.23:942][732]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-04.01.25:087][768]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-04.01.25:187][771]LogTemp: Repeating last play command: VR Preview
-[2019.06.12-04.01.25:204][771]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.01.25:204][771]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.06.12-04.01.25:204][771]PIE: New page: PIE session: MotionControllerMap (12 Jun 2019 8:01:25 pm)
-[2019.06.12-04.01.25:204][771]LogPlayLevel: Creating play world package: /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap
-[2019.06.12-04.01.25:212][771]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007179s)
-[2019.06.12-04.01.25:212][771]LogAIModule: Creating AISystem for world MotionControllerMap
-[2019.06.12-04.01.25:212][771]LogPlayLevel: PIE: World Init took: (0.000660s)
-[2019.06.12-04.01.25:212][771]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap to /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap (0.007983s)
-[2019.06.12-04.01.25:249][771]LogUObjectHash: Compacting FUObjectHashTables data took   3.21ms
-[2019.06.12-04.01.25:258][771]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-04.01.25:289][771]LogLoad: Game class is 'GameMode'
-[2019.06.12-04.01.25:291][771]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap up for play (max tick rate 0) at 2019.06.12-12.01.25
-[2019.06.12-04.01.25:291][771]LogWorld: Bringing up level for play took: 0.001478
-[2019.06.12-04.01.25:303][771]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.01.25:304][771]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.01.25:304][771]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.01.25:307][771]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.01.25:313][771]PIE: Play in editor start time for /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap -0.74
-[2019.06.12-04.01.25:313][771]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.01.41:304][495]LogGameMode: Display: Match State Changed from InProgress to LeavingMap
-[2019.06.12-04.01.41:304][495]LogGameState: Match State Changed from InProgress to LeavingMap
-[2019.06.12-04.01.41:304][495]LogNet: Browse: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-04.01.41:328][495]LogLoad: LoadMap: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-04.01.41:366][495]LogUObjectHash: Compacting FUObjectHashTables data took   2.29ms
-[2019.06.12-04.01.41:399][495]LogAIModule: Creating AISystem for world City
-[2019.06.12-04.01.41:399][495]LogLoad: Game class is 'GameMode'
-[2019.06.12-04.01.41:450][495]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_City.City up for play (max tick rate 0) at 2019.06.12-12.01.41
-[2019.06.12-04.01.41:451][495]LogWorld: Bringing up level for play took: 0.051417
-[2019.06.12-04.01.41:451][495]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
-[2019.06.12-04.01.41:451][495]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.01.41:451][495]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.01.41:451][495]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.01.41:454][495]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.01.41:454][495]LogLoad: Took 0.126574 seconds to LoadMap(/Game/VirtualRealityBP/Maps/City)
-[2019.06.12-04.01.48:242][767]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.01.48:339][767]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-04.01.48:375][767]LogSlate: Window 'VrResearch Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2019.06.12-04.01.48:417][767]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.06.12-04.01.48:417][767]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.01.48:458][767]LogUObjectHash: Compacting FUObjectHashTables data took   2.07ms
-[2019.06.12-04.01.48:473][768]LogPlayLevel: Display: Destroying online subsystem :Context_18
-[2019.06.12-04.01.50:255][846]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-04.01.56:404][965]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-04.01.56:552][967]BlueprintLog: New page: Compile MotionControllerPawn
-[2019.06.12-04.01.56:765][967]LogUObjectHash: Compacting FUObjectHashTables data took   4.51ms
-[2019.06.12-04.01.56:899][967]LogSavePackage: Moving 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/MotionControllerPawnE02666464399F8E6820086B06301CBAD.tmp' to 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
-[2019.06.12-04.01.59:007][ 10]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-04.01.59:970][ 39]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-04.02.00:036][ 41]LogTemp: Repeating last play command: VR Preview
-[2019.06.12-04.02.00:053][ 41]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.02.00:054][ 41]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.06.12-04.02.00:054][ 41]PIE: New page: PIE session: MotionControllerMap (12 Jun 2019 8:02:00 pm)
-[2019.06.12-04.02.00:054][ 41]LogPlayLevel: Creating play world package: /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap
-[2019.06.12-04.02.00:061][ 41]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007277s)
-[2019.06.12-04.02.00:062][ 41]LogAIModule: Creating AISystem for world MotionControllerMap
-[2019.06.12-04.02.00:062][ 41]LogPlayLevel: PIE: World Init took: (0.000704s)
-[2019.06.12-04.02.00:062][ 41]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap to /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap (0.008135s)
-[2019.06.12-04.02.00:101][ 41]LogUObjectHash: Compacting FUObjectHashTables data took   3.76ms
-[2019.06.12-04.02.00:109][ 41]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-04.02.00:142][ 41]LogLoad: Game class is 'GameMode'
-[2019.06.12-04.02.00:144][ 41]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap up for play (max tick rate 0) at 2019.06.12-12.02.00
-[2019.06.12-04.02.00:144][ 41]LogWorld: Bringing up level for play took: 0.001222
-[2019.06.12-04.02.00:157][ 41]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.02.00:157][ 41]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.02.00:157][ 41]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.02.00:159][ 41]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.02.00:164][ 41]PIE: Play in editor start time for /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap 0.111
-[2019.06.12-04.02.00:164][ 41]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.02.11:120][482]LogGameMode: Display: Match State Changed from InProgress to LeavingMap
-[2019.06.12-04.02.11:120][482]LogGameState: Match State Changed from InProgress to LeavingMap
-[2019.06.12-04.02.11:121][482]LogNet: Browse: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-04.02.11:144][482]LogLoad: LoadMap: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-04.02.11:182][482]LogUObjectHash: Compacting FUObjectHashTables data took   2.24ms
-[2019.06.12-04.02.11:218][482]LogAIModule: Creating AISystem for world City
-[2019.06.12-04.02.11:218][482]LogLoad: Game class is 'GameMode'
-[2019.06.12-04.02.11:267][482]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_City.City up for play (max tick rate 0) at 2019.06.12-12.02.11
-[2019.06.12-04.02.11:267][482]LogWorld: Bringing up level for play took: 0.047806
-[2019.06.12-04.02.11:268][482]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
-[2019.06.12-04.02.11:268][482]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.02.11:268][482]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.02.11:268][482]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.02.11:271][482]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.02.11:271][482]LogLoad: Took 0.126111 seconds to LoadMap(/Game/VirtualRealityBP/Maps/City)
-[2019.06.12-04.02.16:473][691]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.02.16:568][691]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-04.02.16:601][691]LogSlate: Window 'VrResearch Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2019.06.12-04.02.16:638][691]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.06.12-04.02.16:639][691]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.02.16:682][691]LogUObjectHash: Compacting FUObjectHashTables data took   2.68ms
-[2019.06.12-04.02.16:697][692]LogPlayLevel: Display: Destroying online subsystem :Context_19
-[2019.06.12-04.02.21:421][904]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-04.02.21:486][906]LogTemp: Repeating last play command: VR Preview
-[2019.06.12-04.02.21:505][906]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.02.21:505][906]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.06.12-04.02.21:505][906]PIE: New page: PIE session: MotionControllerMap (12 Jun 2019 8:02:21 pm)
-[2019.06.12-04.02.21:505][906]LogPlayLevel: Creating play world package: /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap
-[2019.06.12-04.02.21:513][906]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007299s)
-[2019.06.12-04.02.21:513][906]LogAIModule: Creating AISystem for world MotionControllerMap
-[2019.06.12-04.02.21:513][906]LogPlayLevel: PIE: World Init took: (0.000520s)
-[2019.06.12-04.02.21:513][906]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap to /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap (0.008021s)
-[2019.06.12-04.02.21:552][906]LogUObjectHash: Compacting FUObjectHashTables data took   1.99ms
-[2019.06.12-04.02.21:560][906]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-04.02.21:590][906]LogLoad: Game class is 'GameMode'
-[2019.06.12-04.02.21:592][906]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap up for play (max tick rate 0) at 2019.06.12-12.02.21
-[2019.06.12-04.02.21:592][906]LogWorld: Bringing up level for play took: 0.001345
-[2019.06.12-04.02.21:604][906]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.02.21:605][906]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.02.21:605][906]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.02.21:608][906]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.02.21:615][906]PIE: Play in editor start time for /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap -0.439
-[2019.06.12-04.02.21:615][906]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.02.46:232][885]LogGameMode: Display: Match State Changed from InProgress to LeavingMap
-[2019.06.12-04.02.46:233][885]LogGameState: Match State Changed from InProgress to LeavingMap
-[2019.06.12-04.02.46:233][885]LogNet: Browse: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-04.02.46:257][885]LogLoad: LoadMap: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-04.02.46:294][885]LogUObjectHash: Compacting FUObjectHashTables data took   2.35ms
-[2019.06.12-04.02.46:328][885]LogAIModule: Creating AISystem for world City
-[2019.06.12-04.02.46:328][885]LogLoad: Game class is 'GameMode'
-[2019.06.12-04.02.46:376][885]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_City.City up for play (max tick rate 0) at 2019.06.12-12.02.46
-[2019.06.12-04.02.46:377][885]LogWorld: Bringing up level for play took: 0.047678
-[2019.06.12-04.02.46:378][885]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
-[2019.06.12-04.02.46:378][885]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.02.46:378][885]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.02.46:378][885]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.02.46:381][885]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.02.46:382][885]LogLoad: Took 0.124591 seconds to LoadMap(/Game/VirtualRealityBP/Maps/City)
-[2019.06.12-04.02.55:953][265]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.02.56:048][265]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-04.02.56:078][265]LogSlate: Window 'VrResearch Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2019.06.12-04.02.56:117][265]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.06.12-04.02.56:118][265]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.02.56:156][265]LogUObjectHash: Compacting FUObjectHashTables data took   1.77ms
-[2019.06.12-04.02.56:170][266]LogPlayLevel: Display: Destroying online subsystem :Context_20
-[2019.06.12-04.02.58:104][345]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-04.03.05:578][492]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-04.03.05:652][493]BlueprintLog: New page: Compile MotionControllerPawn
-[2019.06.12-04.03.05:864][493]LogUObjectHash: Compacting FUObjectHashTables data took   4.94ms
-[2019.06.12-04.03.05:994][493]LogSavePackage: Moving 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/MotionControllerPawn76CBCD814DC9341355E336AAE7A7113E.tmp' to 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Content/VirtualRealityBP/Blueprints/MotionControllerPawn.uasset'
-[2019.06.12-04.03.08:179][537]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-04.03.09:227][567]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-04.03.09:327][569]LogTemp: Repeating last play command: VR Preview
-[2019.06.12-04.03.09:348][569]LogBlueprintUserMessages: Early PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.03.09:348][569]LogPlayLevel: PlayLevel: No blueprints needed recompiling
-[2019.06.12-04.03.09:349][569]PIE: New page: PIE session: MotionControllerMap (12 Jun 2019 8:03:09 pm)
-[2019.06.12-04.03.09:349][569]LogPlayLevel: Creating play world package: /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap
-[2019.06.12-04.03.09:355][569]LogPlayLevel: PIE: StaticDuplicateObject took: (0.006555s)
-[2019.06.12-04.03.09:356][569]LogAIModule: Creating AISystem for world MotionControllerMap
-[2019.06.12-04.03.09:356][569]LogPlayLevel: PIE: World Init took: (0.000631s)
-[2019.06.12-04.03.09:356][569]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap to /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap (0.007324s)
-[2019.06.12-04.03.09:392][569]LogUObjectHash: Compacting FUObjectHashTables data took   3.12ms
-[2019.06.12-04.03.09:404][569]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-04.03.09:435][569]LogLoad: Game class is 'GameMode'
-[2019.06.12-04.03.09:437][569]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap.MotionControllerMap up for play (max tick rate 0) at 2019.06.12-12.03.09
-[2019.06.12-04.03.09:437][569]LogWorld: Bringing up level for play took: 0.001250
-[2019.06.12-04.03.09:449][569]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.03.09:449][569]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.03.09:449][569]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.03.09:452][569]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.03.09:456][569]PIE: Play in editor start time for /Game/VirtualRealityBP/Maps/UEDPIE_0_MotionControllerMap -0.597
-[2019.06.12-04.03.09:457][569]LogBlueprintUserMessages: Late PlayInEditor Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.03.23:437][250]LogGameMode: Display: Match State Changed from InProgress to LeavingMap
-[2019.06.12-04.03.23:437][250]LogGameState: Match State Changed from InProgress to LeavingMap
-[2019.06.12-04.03.23:438][250]LogNet: Browse: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-04.03.23:462][250]LogLoad: LoadMap: /Game/VirtualRealityBP/Maps/City
-[2019.06.12-04.03.23:494][250]LogUObjectHash: Compacting FUObjectHashTables data took   2.37ms
-[2019.06.12-04.03.23:529][250]LogAIModule: Creating AISystem for world City
-[2019.06.12-04.03.23:529][250]LogLoad: Game class is 'GameMode'
-[2019.06.12-04.03.23:581][250]LogWorld: Bringing World /Game/VirtualRealityBP/Maps/UEDPIE_0_City.City up for play (max tick rate 0) at 2019.06.12-12.03.23
-[2019.06.12-04.03.23:582][250]LogWorld: Bringing up level for play took: 0.051604
-[2019.06.12-04.03.23:582][250]LogGameMode: FindPlayerStart: PATHS NOT DEFINED or NO PLAYERSTART with positive rating
-[2019.06.12-04.03.23:582][250]LogGameMode: Display: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.03.23:582][250]LogGameState: Match State Changed from EnteringMap to WaitingToStart
-[2019.06.12-04.03.23:582][250]LogGameMode: Display: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.03.23:586][250]LogGameState: Match State Changed from WaitingToStart to InProgress
-[2019.06.12-04.03.23:586][250]LogLoad: Took 0.124746 seconds to LoadMap(/Game/VirtualRealityBP/Maps/City)
-[2019.06.12-04.06.29:249][222]LogBlueprintUserMessages: Early EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.06.29:367][222]LogSlate: Updating window title bar state: overlay mode, drag disabled, window buttons hidden, title bar hidden
-[2019.06.12-04.06.29:399][222]LogSlate: Window 'VrResearch Game Preview Standalone (64-bit/PCD3D_SM5)' being destroyed
-[2019.06.12-04.06.29:439][222]LogPlayLevel: Display: Shutting down PIE online subsystems
-[2019.06.12-04.06.29:439][222]LogBlueprintUserMessages: Late EndPlayMap Detection: Level '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel' has LevelScriptBlueprint '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap' with GeneratedClass '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap_C' with ClassGeneratedBy '/Game/VirtualRealityBP/Maps/MotionControllerMap.MotionControllerMap:PersistentLevel.MotionControllerMap'
-[2019.06.12-04.06.29:486][222]LogUObjectHash: Compacting FUObjectHashTables data took   2.59ms
-[2019.06.12-04.06.29:500][223]LogPlayLevel: Display: Destroying online subsystem :Context_21
-[2019.06.12-04.08.00:642][870]Cmd: SELECT NONE
-[2019.06.12-04.08.02:942][938]LogSlate: FSceneViewport::OnFocusLost() reason 0
-[2019.06.12-04.08.03:102][943]LogUObjectHash: Compacting FUObjectHashTables data took   0.83ms
-[2019.06.12-04.08.05:207][943]LogSlate: Window 'Save Content' being destroyed
-[2019.06.12-04.08.05:220][943]LogSlate: FSceneViewport::OnFocusLost() reason 2
-[2019.06.12-04.08.05:268][943]LogUObjectHash: Compacting FUObjectHashTables data took   0.77ms
-[2019.06.12-04.08.05:479][943]LogSavePackage: Moving 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/MotionControllerMapAA1DEC224FF80FA0E1FE51A34D9067EA.tmp' to 'C:/Users/Darren Chua/Documents/VrProject/VrResearch/Content/VirtualRealityBP/Maps/MotionControllerMap.umap'
-[2019.06.12-04.08.05:502][943]LogFileHelpers: Saving map 'MotionControllerMap' took 0.272
-[2019.06.12-04.08.05:562][943]LogSlate: Window 'MotionControllerPawn' being destroyed
-[2019.06.12-04.08.05:625][943]LogSlate: Window 'VrResearch - Unreal Editor' being destroyed
-[2019.06.12-04.08.05:626][943]LogWindowsTextInputMethodSystem: Display: IME system now deactivated.
-[2019.06.12-04.08.05:831][944]Cmd: QUIT_EDITOR
-[2019.06.12-04.08.06:187][944]LogHMD: SteamVR Shutting down.
-[2019.06.12-04.08.06:206][944]LogExit: Preparing to exit.
-[2019.06.12-04.08.07:266][944]LogExit: Editor shut down
-[2019.06.12-04.08.07:266][944]LogExit: Transaction tracking system shut down
-[2019.06.12-04.08.07:556][944]LogExit: Object subsystem successfully closed.
-[2019.06.12-04.08.07:574][944]LogShaderCompilers: Display: Shaders left to compile 0
-[2019.06.12-04.08.07:579][944]LogD3D11RHI: Shutdown
-[2019.06.12-04.08.07:579][944]LogD3D11RHI: CleanupD3DDevice
-[2019.06.12-04.08.07:580][944]LogRendererCore: FGlobalReadBuffer::ReleaseRHI
-[2019.06.12-04.08.07:580][944]LogRendererCore: FGlobalDynamicReadBuffer::Cleanup()
-[2019.06.12-04.08.07:580][944]LogRendererCore: FGlobalReadBuffer::ReleaseRHI
-[2019.06.12-04.08.07:580][944]LogRendererCore: FGlobalDynamicReadBuffer::Cleanup()
-[2019.06.12-04.08.07:580][944]LogRendererCore: FGlobalReadBuffer::ReleaseRHI
-[2019.06.12-04.08.07:580][944]LogRendererCore: FGlobalDynamicReadBuffer::Cleanup()
-[2019.06.12-04.08.07:581][944]LogD3D11RHI: ~FD3D11DynamicRHI
-[2019.06.12-04.08.07:592][944]LogModuleManager: Shutting down and abandoning module BlueprintGraph (648)
-[2019.06.12-04.08.07:592][944]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (646)
-[2019.06.12-04.08.07:592][944]LogModuleManager: Shutting down and abandoning module Voice (644)
-[2019.06.12-04.08.07:592][944]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (642)
-[2019.06.12-04.08.07:592][944]LogModuleManager: Shutting down and abandoning module SceneOutliner (640)
-[2019.06.12-04.08.07:592][944]LogModuleManager: Shutting down and abandoning module AddContentDialog (638)
-[2019.06.12-04.08.07:592][944]LogModuleManager: Shutting down and abandoning module WidgetCarousel (637)
-[2019.06.12-04.08.07:592][944]LogModuleManager: Shutting down and abandoning module EditorWidgets (634)
-[2019.06.12-04.08.07:592][944]LogModuleManager: Shutting down and abandoning module CollectionManager (632)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module StatsViewer (630)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module FoliageEdit (628)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module LandscapeEditor (626)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module MeshPaintMode (624)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (622)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module ActorPickerMode (620)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module GeometryMode (618)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module TextureAlignMode (616)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module BspMode (614)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module PIEPreviewDeviceProfileSelector (612)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (610)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module AutomationWorker (608)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module OculusMR (606)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module AudioCaptureEditor (604)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (602)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (600)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module PlacementMode (599)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module MaterialEditor (598)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module ActorSequenceEditor (594)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (592)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (590)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module WebMMediaFactory (588)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module WebMMediaEditor (586)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module WebMMedia (584)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (582)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module MediaCompositingEditor (580)
-[2019.06.12-04.08.07:593][944]LogModuleManager: Shutting down and abandoning module SequenceRecorder (579)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module OpenExrWrapper (576)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module ImgMediaFactory (574)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module ImgMediaEditor (572)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (570)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (568)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (566)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (564)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module MagicLeapCameraPreviewFactory (562)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module MagicLeapMediaCodecFactory (560)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module MagicLeapMediaFactory (558)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module MagicLeapMediaEditor (556)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module CharacterAI (554)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module SmartSnapping (552)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module SessionServices (550)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module MeshPaint (548)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module ViewportSnapping (546)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module ViewportInteraction (544)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module ClothPainter (542)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module SkeletalMeshEditor (541)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module LogVisualizer (538)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module IntroTutorials (536)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (535)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module LuminPlatformEditor (532)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (530)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (528)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (526)
-[2019.06.12-04.08.07:594][944]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (525)
-[2019.06.12-04.08.08:307][944]LogModuleManager: Shutting down and abandoning module WindowsPlatformEditor (522)
-[2019.06.12-04.08.08:307][944]LogModuleManager: Shutting down and abandoning module LuminRuntimeSettings (520)
-[2019.06.12-04.08.08:307][944]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (518)
-[2019.06.12-04.08.08:307][944]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (516)
-[2019.06.12-04.08.08:307][944]LogModuleManager: Shutting down and abandoning module TimeManagementEditor (514)
-[2019.06.12-04.08.08:307][944]LogModuleManager: Shutting down and abandoning module InputBindingEditor (512)
-[2019.06.12-04.08.08:307][944]LogModuleManager: Shutting down and abandoning module MergeActors (510)
-[2019.06.12-04.08.08:307][944]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (508)
-[2019.06.12-04.08.08:308][944]LogModuleManager: Shutting down and abandoning module LocalizationService (507)
-[2019.06.12-04.08.08:308][944]LogModuleManager: Shutting down and abandoning module HardwareTargeting (504)
-[2019.06.12-04.08.08:308][944]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (502)
-[2019.06.12-04.08.08:308][944]LogModuleManager: Shutting down and abandoning module UndoHistory (500)
-[2019.06.12-04.08.08:308][944]LogModuleManager: Shutting down and abandoning module XmlParser (498)
-[2019.06.12-04.08.08:308][944]LogModuleManager: Shutting down and abandoning module Blutility (496)
-[2019.06.12-04.08.08:308][944]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (494)
-[2019.06.12-04.08.08:308][944]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (493)
-[2019.06.12-04.08.08:308][944]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (490)
-[2019.06.12-04.08.08:308][944]LogModuleManager: Shutting down and abandoning module SettingsEditor (488)
-[2019.06.12-04.08.08:308][944]LogModuleManager: Shutting down and abandoning module ProjectLauncher (486)
-[2019.06.12-04.08.08:308][944]LogModuleManager: Shutting down and abandoning module SessionFrontend (484)
-[2019.06.12-04.08.08:308][944]LogModuleManager: Shutting down and abandoning module ProfilerClient (482)
-[2019.06.12-04.08.08:308][944]LogModuleManager: Shutting down and abandoning module DeviceManager (480)
-[2019.06.12-04.08.08:308][944]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (479)
-[2019.06.12-04.08.08:363][944]LogModuleManager: Shutting down and abandoning module AutomationController (476)
-[2019.06.12-04.08.08:363][944]LogModuleManager: Shutting down and abandoning module AutomationWindow (474)
-[2019.06.12-04.08.08:363][944]LogModuleManager: Shutting down and abandoning module Layers (472)
-[2019.06.12-04.08.08:363][944]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (470)
-[2019.06.12-04.08.08:363][944]LogModuleManager: Shutting down and abandoning module DetailCustomizations (468)
-[2019.06.12-04.08.08:363][944]LogModuleManager: Shutting down and abandoning module PackagesDialog (466)
-[2019.06.12-04.08.08:363][944]LogModuleManager: Shutting down and abandoning module AnimationBlueprintEditor (464)
-[2019.06.12-04.08.08:363][944]LogModuleManager: Shutting down and abandoning module Persona (462)
-[2019.06.12-04.08.08:363][944]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (461)
-[2019.06.12-04.08.08:363][944]LogModuleManager: Shutting down and abandoning module AnimGraph (459)
-[2019.06.12-04.08.08:363][944]LogModuleManager: Shutting down and abandoning module Kismet (456)
-[2019.06.12-04.08.08:370][944]LogModuleManager: Shutting down and abandoning module GraphEditor (454)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module ClassViewer (452)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module Toolbox (450)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module ModuleUI (448)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module MovieSceneTools (446)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module OutputLog (444)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module GammaUI (442)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module Documentation (440)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module LiveCoding (438)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module LevelSequence (436)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (434)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module MovieScene (432)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (430)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module LauncherPlatform (428)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module AnalyticsET (426)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module PortalServices (424)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module PortalRpc (422)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module MessagingRpc (420)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module AIModule (418)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module GameplayDebugger (417)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module AITestSuite (415)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module NavigationSystem (413)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module DesktopPlatform (410)
-[2019.06.12-04.08.08:371][944]LogModuleManager: Shutting down and abandoning module ImageWriteQueue (408)
-[2019.06.12-04.08.08:375][944]LogModuleManager: Shutting down and abandoning module ProfilerService (406)
-[2019.06.12-04.08.08:475][944]LogModuleManager: Shutting down and abandoning module TaskGraph (404)
-[2019.06.12-04.08.08:475][944]LogModuleManager: Shutting down and abandoning module SteamVRController (402)
-[2019.06.12-04.08.08:475][944]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (400)
-[2019.06.12-04.08.08:475][944]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (398)
-[2019.06.12-04.08.08:475][944]LogModuleManager: Shutting down and abandoning module OculusEditor (396)
-[2019.06.12-04.08.08:475][944]LogModuleManager: Shutting down and abandoning module OculusInput (394)
-[2019.06.12-04.08.08:475][944]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (392)
-[2019.06.12-04.08.08:475][944]LogModuleManager: Shutting down and abandoning module EditableMesh (390)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (388)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module CableComponent (386)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module AudioCapture (384)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (382)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module AndroidPermission (380)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module NUTUnrealEngine4 (378)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module NetcodeUnitTest (376)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module MediaCompositing (374)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module LinearTimecode (372)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module ImgMedia (370)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module MagicLeapHelperVulkan (368)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module MagicLeapHelperOpenGL (366)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module MagicLeapAudio (364)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module HTML5Networking (362)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module GeometryCacheTracks (360)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module GeometryCacheSequencer (358)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module BackChannel (356)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module AppleVision (354)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module AppleImageUtilsBlueprintSupport (352)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module AppleImageUtils (350)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module AlembicImporter (348)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module AlembicLibrary (347)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module GeometryCache (346)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (345)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module VariantManagerContent (340)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module DatasmithContentEditor (338)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (336)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module PluginBrowser (334)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (332)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module MaterialAnalyzer (330)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module CryptoKeysOpenSSL (328)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module CryptoKeys (326)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (324)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module VisualStudioCodeSourceCodeAccess (322)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module UObjectPlugin (320)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (318)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (316)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module GitSourceControl (314)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module SourceControl (313)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module CLionSourceCodeAccess (310)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module AnimationSharingEd (308)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module ActorLayerUtilitiesEditor (306)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module ActorLayerUtilities (304)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (302)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (300)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (298)
-[2019.06.12-04.08.08:476][944]LogModuleManager: Shutting down and abandoning module Paper2DEditor (296)
-[2019.06.12-04.08.08:477][944]LogModuleManager: Shutting down and abandoning module SignificanceManager (294)
-[2019.06.12-04.08.08:477][944]LogModuleManager: Shutting down and abandoning module RuntimePhysXCooking (292)
-[2019.06.12-04.08.08:477][944]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (290)
-[2019.06.12-04.08.08:477][944]LogModuleManager: Shutting down and abandoning module PhysXVehicles (288)
-[2019.06.12-04.08.08:477][944]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (286)
-[2019.06.12-04.08.08:477][944]LogModuleManager: Shutting down and abandoning module ActorSequence (284)
-[2019.06.12-04.08.08:477][944]LogModuleManager: Shutting down and abandoning module UdpMessaging (282)
-[2019.06.12-04.08.08:578][944]LogModuleManager: Shutting down and abandoning module TcpMessaging (280)
-[2019.06.12-04.08.08:678][944]LogModuleManager: Shutting down and abandoning module MagicLeapIdentity (278)
-[2019.06.12-04.08.08:678][944]LogModuleManager: Shutting down and abandoning module MagicLeapSecureStorage (276)
-[2019.06.12-04.08.08:678][944]LogModuleManager: Shutting down and abandoning module MagicLeapHandTracking (274)
-[2019.06.12-04.08.08:678][944]LogModuleManager: Shutting down and abandoning module MagicLeapEyeTracker (272)
-[2019.06.12-04.08.08:678][944]LogModuleManager: Shutting down and abandoning module MagicLeapController (270)
-[2019.06.12-04.08.08:678][944]LogSlate: Slate User Destroyed.  User Index 0, Is Virtual User: 0
-[2019.06.12-04.08.08:678][944]LogModuleManager: Shutting down and abandoning module MagicLeapAR (268)
-[2019.06.12-04.08.08:678][944]LogModuleManager: Shutting down and abandoning module AugmentedReality (267)
-[2019.06.12-04.08.08:678][944]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (264)
-[2019.06.12-04.08.08:678][944]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (262)
-[2019.06.12-04.08.08:678][944]LogModuleManager: Shutting down and abandoning module FacialAnimation (260)
-[2019.06.12-04.08.08:678][944]LogModuleManager: Shutting down and abandoning module DataValidation (258)
-[2019.06.12-04.08.08:678][944]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (256)
-[2019.06.12-04.08.08:678][944]LogModuleManager: Shutting down and abandoning module LevelEditor (255)
-[2019.06.12-04.08.08:679][944]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (254)
-[2019.06.12-04.08.08:679][944]LogModuleManager: Shutting down and abandoning module CommonMenuExtensions (252)
-[2019.06.12-04.08.08:679][944]LogModuleManager: Shutting down and abandoning module MainFrame (250)
-[2019.06.12-04.08.08:679][944]LogModuleManager: Shutting down and abandoning module HotReload (249)
-[2019.06.12-04.08.08:681][944]LogModuleManager: Shutting down and abandoning module ContentBrowser (245)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module TreeMap (243)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module AnimationSharing (240)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (238)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module AISupportModule (236)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module Paper2D (234)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (232)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module WebMMoviePlayer (230)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module PacketHandler (228)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (226)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (224)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module MediaAssets (222)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module Overlay (220)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module OverlayEditor (219)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module VREditor (216)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module StringTableEditor (214)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (212)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (210)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module FunctionalTesting (208)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (206)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (205)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module UMG (202)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module UMGEditor (201)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module Sequencer (200)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module MessageLog (197)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module SlateReflector (192)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module Slate (190)
-[2019.06.12-04.08.08:683][944]LogModuleManager: Shutting down and abandoning module EditorStyle (188)
-[2019.06.12-04.08.08:685][944]LogModuleManager: Shutting down and abandoning module UnrealEd (186)
-[2019.06.12-04.08.08:685][944]LogModuleManager: Shutting down and abandoning module MRMesh (184)
-[2019.06.12-04.08.08:685][944]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (182)
-[2019.06.12-04.08.08:685][944]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (180)
-[2019.06.12-04.08.08:685][944]LogModuleManager: Shutting down and abandoning module XAudio2 (178)
-[2019.06.12-04.08.08:685][944]LogModuleManager: Shutting down and abandoning module Networking (176)
-[2019.06.12-04.08.08:685][944]LogModuleManager: Shutting down and abandoning module Core (174)
-[2019.06.12-04.08.08:686][944]LogModuleManager: Shutting down and abandoning module KismetCompiler (172)
-[2019.06.12-04.08.08:686][944]LogModuleManager: Shutting down and abandoning module MeshUtilities (170)
-[2019.06.12-04.08.08:686][944]LogModuleManager: Shutting down and abandoning module MeshMergeUtilities (169)
-[2019.06.12-04.08.08:686][944]LogModuleManager: Shutting down and abandoning module MeshReductionInterface (168)
-[2019.06.12-04.08.08:686][944]LogModuleManager: Shutting down and abandoning module SkeletalMeshReduction (167)
-[2019.06.12-04.08.08:686][944]LogModuleManager: Shutting down and abandoning module ProxyLODMeshReduction (165)
-[2019.06.12-04.08.08:686][944]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (163)
-[2019.06.12-04.08.08:686][944]LogModuleManager: Shutting down and abandoning module MaterialBaking (159)
-[2019.06.12-04.08.08:686][944]LogModuleManager: Shutting down and abandoning module DerivedDataCache (154)
-[2019.06.12-04.08.08:698][944]LogDerivedDataCache: Shutdown
-[2019.06.12-04.08.08:698][944]LogModuleManager: Shutting down and abandoning module XGEController (152)
-[2019.06.12-04.08.08:698][944]LogModuleManager: Shutting down and abandoning module TargetPlatform (150)
-[2019.06.12-04.08.08:698][944]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (149)
-[2019.06.12-04.08.08:698][944]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (147)
-[2019.06.12-04.08.08:698][944]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (145)
-[2019.06.12-04.08.08:698][944]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (143)
-[2019.06.12-04.08.08:698][944]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (141)
-[2019.06.12-04.08.08:698][944]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (139)
-[2019.06.12-04.08.08:698][944]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (137)
-[2019.06.12-04.08.08:698][944]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (135)
-[2019.06.12-04.08.08:698][944]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (133)
-[2019.06.12-04.08.08:698][944]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (131)
-[2019.06.12-04.08.08:698][944]LogModuleManager: Shutting down and abandoning module ImageWrapper (130)
-[2019.06.12-04.08.08:698][944]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (127)
-[2019.06.12-04.08.08:698][944]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (125)
-[2019.06.12-04.08.08:698][944]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (123)
-[2019.06.12-04.08.08:698][944]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (121)
-[2019.06.12-04.08.08:698][944]LogModuleManager: Shutting down and abandoning module LuminTargetPlatform (119)
-[2019.06.12-04.08.08:700][944]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (117)
-[2019.06.12-04.08.08:700][944]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (115)
-[2019.06.12-04.08.08:700][944]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (113)
-[2019.06.12-04.08.08:700][944]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (111)
-[2019.06.12-04.08.08:700][944]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (109)
-[2019.06.12-04.08.08:702][944]LogModuleManager: Shutting down and abandoning module Messaging (107)
-[2019.06.12-04.08.08:702][944]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (105)
-[2019.06.12-04.08.08:704][944]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (103)
-[2019.06.12-04.08.08:704][944]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (101)
-[2019.06.12-04.08.08:723][944]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (99)
-[2019.06.12-04.08.08:723][944]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (97)
-[2019.06.12-04.08.08:723][944]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (95)
-[2019.06.12-04.08.08:723][944]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (93)
-[2019.06.12-04.08.08:723][944]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (91)
-[2019.06.12-04.08.08:723][944]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (89)
-[2019.06.12-04.08.08:723][944]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (87)
-[2019.06.12-04.08.08:723][944]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (85)
-[2019.06.12-04.08.08:723][944]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (83)
-[2019.06.12-04.08.08:723][944]LogModuleManager: Shutting down and abandoning module InputCore (80)
-[2019.06.12-04.08.08:724][944]LogModuleManager: Shutting down and abandoning module Settings (78)
-[2019.06.12-04.08.08:724][944]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (76)
-[2019.06.12-04.08.08:724][944]LogModuleManager: Shutting down and abandoning module PhysXCooking (74)
-[2019.06.12-04.08.08:724][944]LogModuleManager: Shutting down and abandoning module SteamVR (72)
-[2019.06.12-04.08.08:724][944]LogHMD: Freeing OpenVRDLLHandle.
-[2019.06.12-04.08.08:724][944]LogModuleManager: Shutting down and abandoning module OculusHMD (70)
-[2019.06.12-04.08.08:724][944]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (68)
-[2019.06.12-04.08.08:724][944]LogModuleManager: Shutting down and abandoning module LauncherChunkInstaller (66)
-[2019.06.12-04.08.08:724][944]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (64)
-[2019.06.12-04.08.08:724][944]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (60)
-[2019.06.12-04.08.08:725][944]LogModuleManager: Shutting down and abandoning module XMPP (55)
-[2019.06.12-04.08.08:725][944]LogModuleManager: Shutting down and abandoning module WebSockets (54)
-[2019.06.12-04.08.08:753][944]LogModuleManager: Shutting down and abandoning module HTTP (51)
-[2019.06.12-04.08.08:753][944]LogHttp: Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
-[2019.06.12-04.08.08:753][944]LogHttp: Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7BD67E62E8-4985-4A30-C115-FF88FAFB738D%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.22.2-6574378%2B%2B%2BUE4%2BRelease-4.22&UserID=055363374857821eddcc0eb92cd54226%7Cf78be8046f3942a686e1c70fca118f0f%7C4c9cd85d-8284-4444-9dfc-6f2aa1cd548e&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
-[2019.06.12-04.08.08:770][944]LogModuleManager: Shutting down and abandoning module SSL (50)
-[2019.06.12-04.08.08:771][944]LogModuleManager: Shutting down and abandoning module WmfMedia (46)
-[2019.06.12-04.08.08:773][944]LogModuleManager: Shutting down and abandoning module Media (45)
-[2019.06.12-04.08.08:779][944]LogModuleManager: Shutting down and abandoning module MagicLeap (42)
-[2019.06.12-04.08.08:779][944]LogModuleManager: Shutting down and abandoning module DatasmithContent (40)
-[2019.06.12-04.08.08:780][944]LogModuleManager: Shutting down and abandoning module AnimationModifiers (38)
-[2019.06.12-04.08.08:780][944]LogModuleManager: Shutting down and abandoning module PropertyEditor (37)
-[2019.06.12-04.08.08:780][944]LogModuleManager: Shutting down and abandoning module AudioEditor (34)
-[2019.06.12-04.08.08:780][944]LogModuleManager: Shutting down and abandoning module TextureCompressor (32)
-[2019.06.12-04.08.08:780][944]LogModuleManager: Shutting down and abandoning module RenderCore (30)
-[2019.06.12-04.08.08:780][944]LogModuleManager: Shutting down and abandoning module Landscape (28)
-[2019.06.12-04.08.08:780][944]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (26)
-[2019.06.12-04.08.08:781][944]LogModuleManager: Shutting down and abandoning module OpenGLDrv (24)
-[2019.06.12-04.08.08:781][944]LogModuleManager: Shutting down and abandoning module D3D11RHI (22)
-[2019.06.12-04.08.08:781][944]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (20)
-[2019.06.12-04.08.08:781][944]LogModuleManager: Shutting down and abandoning module Renderer (18)
-[2019.06.12-04.08.08:781][944]LogModuleManager: Shutting down and abandoning module Engine (16)
-[2019.06.12-04.08.08:781][944]LogModuleManager: Shutting down and abandoning module CoreUObject (14)
-[2019.06.12-04.08.08:781][944]LogModuleManager: Shutting down and abandoning module NetworkFile (12)
-[2019.06.12-04.08.08:781][944]LogModuleManager: Shutting down and abandoning module CookedIterativeFile (10)
-[2019.06.12-04.08.08:781][944]LogModuleManager: Shutting down and abandoning module StreamingFile (8)
-[2019.06.12-04.08.08:781][944]LogModuleManager: Shutting down and abandoning module SandboxFile (6)
-[2019.06.12-04.08.08:781][944]LogModuleManager: Shutting down and abandoning module PakFile (4)
-[2019.06.12-04.08.08:781][944]LogModuleManager: Shutting down and abandoning module RSA (3)
-[2019.06.12-04.08.08:789][944]LogExit: Exiting.
-[2019.06.12-04.08.08:801][944]Log file closed, 06/12/19 12:08:08
+[2019.06.16-22.21.46:835][  0]LogConfig: Setting CVar [[r.VSync:0]]
+[2019.06.16-22.21.46:835][  0]LogConfig: Setting CVar [[r.RHICmdBypass:0]]
+[2019.06.16-22.21.46:835][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererSettings] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Engine.ini]
+[2019.06.16-22.21.46:835][  0]LogConfig: Setting CVar [[r.GPUCrashDebugging:0]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusion:0]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[r.DefaultFeature.AmbientOcclusionStaticFraction:0]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[vr.InstancedStereo:1]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[r.SeparateTranslucency:0]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[r.HZBOcclusion:0]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[r.SSR.MaxRoughness:0]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[r.rhicmdbypass:0]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.RendererOverrideSettings] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Engine.ini]
+[2019.06.16-22.21.46:836][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.StreamingSettings] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Engine.ini]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[s.MinBulkDataSizeForAsyncLoading:131072]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[s.AsyncLoadingThreadEnabled:0]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[s.EventDrivenLoaderEnabled:1]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[s.WarnIfTimeLimitExceeded:0]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMultiplier:1.5]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[s.TimeLimitExceededMinTime:0.005]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[s.UseBackgroundLevelStreaming:1]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[s.PriorityAsyncLoadingExtraTime:15.0]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[s.LevelStreamingActorsUpdateTimeLimit:5.0]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[s.PriorityLevelStreamingActorsUpdateExtraTime:5.0]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsRegistrationGranularity:10]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[s.UnregisterComponentsTimeLimit:1.0]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[s.LevelStreamingComponentsUnregistrationGranularity:5]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.GarbageCollectionSettings] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Engine.ini]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[gc.MaxObjectsNotConsideredByGC:1]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[gc.SizeOfPermanentObjectPool:0]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[gc.FlushStreamingOnGC:0]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[gc.NumRetriesBeforeForcingGC:10]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[gc.AllowParallelGC:1]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[gc.TimeBetweenPurgingPendingKillObjects:61.1]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[gc.MaxObjectsInEditor:16777216]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[gc.IncrementalBeginDestroyEnabled:1]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[gc.CreateGCClusters:1]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[gc.MinGCClusterSize:5]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[gc.ActorClusteringEnabled:0]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[gc.BlueprintClusteringEnabled:0]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Setting CVar [[gc.UseDisregardForGCOnDedicatedServers:0]]
+[2019.06.16-22.21.46:836][  0]LogConfig: Applying CVar settings from Section [/Script/Engine.NetworkSettings] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Engine.ini]
+[2019.06.16-22.21.46:836][  0]LogConfig: Applying CVar settings from Section [/Script/UnrealEd.CookerSettings] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Engine.ini]
+[2019.06.16-22.21.46:885][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
+[2019.06.16-22.21.46:885][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.06.16-22.21.46:885][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:3]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:0]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:0]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:0]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.LensFlareQuality:0]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:0]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.BloomQuality:1]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:0]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.06.16-22.21.46:886][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:4]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.SSR.Quality:0]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.SceneColorFormat:2]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:0]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.06.16-22.21.46:887][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.06.16-22.21.46:895][  0]LogInit: Selected Device Profile: [Windows]
+[2019.06.16-22.21.46:895][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2019.06.16-22.21.46:920][  0]LogHAL: Display: Platform has ~ 24 GB [25726074880 / 34359738368 / 24], which maps to Larger [LargestMinGB=32, LargerMinGB=12, DefaultMinGB=8, SmallerMinGB=6, SmallestMinGB=0)
+[2019.06.16-22.21.46:925][  0]LogConfig: Setting CVar [[r.Vulkan.UseRealUBs:0		; Required until we fix HLR fall-out]]
+[2019.06.16-22.21.46:925][  0]LogInit: Going up to parent DeviceProfile []
+[2019.06.16-22.21.46:926][  0]LogConfig: Applying CVar settings from Section [ViewDistanceQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
+[2019.06.16-22.21.46:926][  0]LogConfig: Setting CVar [[r.SkeletalMeshLODBias:0]]
+[2019.06.16-22.21.46:926][  0]LogConfig: Setting CVar [[r.ViewDistanceScale:1.0]]
+[2019.06.16-22.21.46:926][  0]LogConfig: Applying CVar settings from Section [AntiAliasingQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
+[2019.06.16-22.21.46:926][  0]LogConfig: Setting CVar [[r.PostProcessAAQuality:3]]
+[2019.06.16-22.21.46:926][  0]LogConfig: Applying CVar settings from Section [ShadowQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
+[2019.06.16-22.21.46:926][  0]LogConfig: Setting CVar [[r.LightFunctionQuality:1]]
+[2019.06.16-22.21.46:926][  0]LogConfig: Setting CVar [[r.ShadowQuality:5]]
+[2019.06.16-22.21.46:926][  0]LogConfig: Setting CVar [[r.Shadow.CSM.MaxCascades:10]]
+[2019.06.16-22.21.46:926][  0]LogConfig: Setting CVar [[r.Shadow.MaxResolution:2048]]
+[2019.06.16-22.21.46:926][  0]LogConfig: Setting CVar [[r.Shadow.MaxCSMResolution:2048]]
+[2019.06.16-22.21.46:926][  0]LogConfig: Setting CVar [[r.Shadow.RadiusThreshold:0.01]]
+[2019.06.16-22.21.46:926][  0]LogConfig: Setting CVar [[r.Shadow.DistanceScale:1.0]]
+[2019.06.16-22.21.46:926][  0]LogConfig: Setting CVar [[r.Shadow.CSM.TransitionScale:1.0]]
+[2019.06.16-22.21.46:926][  0]LogConfig: Setting CVar [[r.Shadow.PreShadowResolutionFactor:1.0]]
+[2019.06.16-22.21.46:926][  0]LogConfig: Setting CVar [[r.DistanceFieldShadowing:1]]
+[2019.06.16-22.21.46:926][  0]LogConfig: Setting CVar [[r.DistanceFieldAO:1]]
+[2019.06.16-22.21.46:926][  0]LogConfig: Setting CVar [[r.AOQuality:2]]
+[2019.06.16-22.21.46:926][  0]LogConfig: Setting CVar [[r.VolumetricFog:1]]
+[2019.06.16-22.21.46:926][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridPixelSize:8]]
+[2019.06.16-22.21.46:926][  0]LogConfig: Setting CVar [[r.VolumetricFog.GridSizeZ:128]]
+[2019.06.16-22.21.46:927][  0]LogConfig: Setting CVar [[r.VolumetricFog.HistoryMissSupersampleCount:4]]
+[2019.06.16-22.21.46:927][  0]LogConfig: Setting CVar [[r.LightMaxDrawDistanceScale:1]]
+[2019.06.16-22.21.46:927][  0]LogConfig: Setting CVar [[r.CapsuleShadows:1]]
+[2019.06.16-22.21.46:927][  0]LogConfig: Applying CVar settings from Section [PostProcessQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
+[2019.06.16-22.21.46:927][  0]LogConfig: Setting CVar [[r.MotionBlurQuality:0]]
+[2019.06.16-22.21.46:927][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMipLevelFactor:0.4]]
+[2019.06.16-22.21.46:927][  0]LogConfig: Setting CVar [[r.AmbientOcclusionMaxQuality:100]]
+[2019.06.16-22.21.46:927][  0]LogConfig: Setting CVar [[r.AmbientOcclusionLevels:0]]
+[2019.06.16-22.21.46:927][  0]LogConfig: Setting CVar [[r.AmbientOcclusionRadiusScale:1.0]]
+[2019.06.16-22.21.46:927][  0]LogConfig: Setting CVar [[r.DepthOfFieldQuality:0]]
+[2019.06.16-22.21.46:927][  0]LogConfig: Setting CVar [[r.RenderTargetPoolMin:400]]
+[2019.06.16-22.21.46:927][  0]LogConfig: Setting CVar [[r.LensFlareQuality:0]]
+[2019.06.16-22.21.46:927][  0]LogConfig: Setting CVar [[r.SceneColorFringeQuality:0]]
+[2019.06.16-22.21.46:927][  0]LogConfig: Setting CVar [[r.EyeAdaptationQuality:2]]
+[2019.06.16-22.21.46:927][  0]LogConfig: Setting CVar [[r.BloomQuality:1]]
+[2019.06.16-22.21.46:927][  0]LogConfig: Setting CVar [[r.FastBlurThreshold:0]]
+[2019.06.16-22.21.46:927][  0]LogConfig: Setting CVar [[r.Upscale.Quality:3]]
+[2019.06.16-22.21.46:927][  0]LogConfig: Setting CVar [[r.Tonemapper.GrainQuantization:1]]
+[2019.06.16-22.21.46:927][  0]LogConfig: Setting CVar [[r.LightShaftQuality:1]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.Filter.SizeScale:1]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.Tonemapper.Quality:5]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.DOF.Gather.AccumulatorQuality:1        ; higher gathering accumulator quality]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.DOF.Gather.PostfilterMethod:1          ; Median3x3 postfilering method]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.DOF.Gather.EnableBokehSettings:0       ; no bokeh simulation when gathering]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.DOF.Gather.RingCount:4                 ; medium number of samples when gathering]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.DOF.Scatter.ForegroundCompositing:1    ; additive foreground scattering]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.DOF.Scatter.BackgroundCompositing:2    ; additive background scattering]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.DOF.Scatter.EnableBokehSettings:1      ; bokeh simulation when scattering]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.DOF.Scatter.MaxSpriteRatio:0.1         ; only a maximum of 10% of scattered bokeh]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.DOF.Recombine.Quality:1                ; cheap slight out of focus]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.DOF.Recombine.EnableBokehSettings:0    ; no bokeh simulation on slight out of focus]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.DOF.TemporalAAQuality:1                ; more stable temporal accumulation]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxForegroundRadius:0.025]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.DOF.Kernel.MaxBackgroundRadius:0.025]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Applying CVar settings from Section [TextureQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.Streaming.MipBias:0]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.Streaming.AmortizeCPUToGPUCopy:0]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.Streaming.MaxNumTexturesToStreamPerFrame:0]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.Streaming.Boost:1]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.MaxAnisotropy:8]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.Streaming.LimitPoolSizeToVRAM:0]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.Streaming.PoolSize:1000]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.Streaming.MaxEffectiveScreenSize:0]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Applying CVar settings from Section [EffectsQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.TranslucencyLightingVolumeDim:4]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.RefractionQuality:2]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.SSR.Quality:0]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.SceneColorFormat:2]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.DetailMode:2]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.TranslucencyVolumeBlur:0]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.MaterialQualityLevel:1 ; High quality]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.SSS.Scale:1]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.SSS.SampleSet:2]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.SSS.Quality:1]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.SSS.HalfRes:1]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.EmitterSpawnRateScale:1.0]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Setting CVar [[r.ParticleLightQuality:2]]
+[2019.06.16-22.21.46:928][  0]LogConfig: Applying CVar settings from Section [FoliageQuality@3] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Scalability.ini]
+[2019.06.16-22.21.46:929][  0]LogConfig: Setting CVar [[foliage.DensityScale:1.0]]
+[2019.06.16-22.21.46:929][  0]LogConfig: Setting CVar [[grass.DensityScale:1.0]]
+[2019.06.16-22.21.46:929][  0]LogConfig: Applying CVar settings from Section [Startup] File [../../../Engine/Config/ConsoleVariables.ini]
+[2019.06.16-22.21.46:941][  0]LogConfig: Setting CVar [[net.UseAdaptiveNetUpdateFrequency:0]]
+[2019.06.16-22.21.46:941][  0]LogConfig: Setting CVar [[p.chaos.AllowCreatePhysxBodies:1]]
+[2019.06.16-22.21.46:941][  0]LogConfig: Applying CVar settings from Section [ConsoleVariables] File [C:/Users/Darren Chua/Documents/VrProject/VrResearch/Saved/Config/Windows/Engine.ini]
+[2019.06.16-22.21.46:956][  0]LogInit: Computer: DESKTOP-PJP97K6
+[2019.06.16-22.21.46:956][  0]LogInit: User: DarrenChua
+[2019.06.16-22.21.46:956][  0]LogInit: CPU Page size=4096, Cores=4
+[2019.06.16-22.21.46:956][  0]LogInit: High frequency timer resolution =2.742194 MHz
+[2019.06.16-22.21.46:956][  0]LogMemory: Memory total: Physical=24.0GB (24GB approx)
+[2019.06.16-22.21.46:956][  0]LogMemory: Platform Memory Stats for Windows
+[2019.06.16-22.21.46:956][  0]LogMemory: Process Physical Memory: 99.02 MB used, 99.02 MB peak
+[2019.06.16-22.21.46:956][  0]LogMemory: Process Virtual Memory: 96.17 MB used, 96.17 MB peak
+[2019.06.16-22.21.46:956][  0]LogMemory: Physical Memory: 6182.49 MB used,  18351.81 MB free, 24534.30 MB total
+[2019.06.16-22.21.46:956][  0]LogMemory: Virtual Memory: 4651.88 MB used,  134213072.00 MB free, 134217728.00 MB total
